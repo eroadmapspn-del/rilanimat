@@ -1,0 +1,17 @@
+.env
+projects/
+__pycache__/
+*.egg-info/
+.venv/
+.pytest_cache/
+.ruff_cache/
+
+productions/*/build/
+productions/*/out/
+
+# generated or private material: never push
+productions/
+*.zip
+server.log
+*.tmp
+remotion/out/

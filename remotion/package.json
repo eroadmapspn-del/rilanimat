@@ -1,0 +1,23 @@
+{
+  "name": "onomie-reel-templates",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Remotion templates that render the Reel Studio composition to MP4.",
+  "scripts": {
+    "studio": "remotion studio src/index.ts --props=./sample/composition.json --public-dir=./sample",
+    "render": "remotion render src/index.ts Reel out/reel.mp4",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.261",
+    "@remotion/media-utils": "4.0.261",
+    "@remotion/transitions": "4.0.261",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.261"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.3",
+    "typescript": "5.5.4"
+  }
+}

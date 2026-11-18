@@ -1,0 +1,16 @@
+{
+  "fps": 30, "width": 1080, "height": 1920,
+  "voice": "final/voice.wav",
+  "theme": {"primary": "#ff8a3d", "secondary": "#e8590c", "ink": "#3a1f12", "accent": "#ffe066"},
+  "scenes": [
+    {"id": 1, "template": "hook", "seconds": 3, "image": null, "clip": null, "headline": "Bruno ko bhi chalna hai!", "bullets": [], "sticker": "🐶", "motion": "zoom-in",
+     "words": [{"w":"Bruno","start":0.0,"end":0.7},{"w":"ko","start":0.7,"end":1.1},{"w":"bhi","start":1.1,"end":1.6},{"w":"chalna","start":1.6,"end":2.3},{"w":"hai","start":2.3,"end":3.0}]},
+    {"id": 2, "template": "full", "seconds": 4, "image": "images/kitty_bag1.jpg", "clip": null, "headline": "Meet Onomie", "bullets": [], "sticker": "🎒", "motion": "zoom-in",
+     "words": [{"w":"Meet","start":0.0,"end":1.0},{"w":"Onomie","start":1.0,"end":2.2},{"w":"pet","start":2.2,"end":3.0},{"w":"backpack","start":3.0,"end":4.0}]},
+    {"id": 3, "template": "feature", "seconds": 4, "image": "images/bag2.webp", "clip": null, "headline": "Built for comfort", "bullets": ["Clear dome", "Air vents", "Padded straps"], "sticker": "", "motion": "zoom-out",
+     "words": [{"w":"Clear","start":0.0,"end":1.0},{"w":"dome","start":1.0,"end":2.0},{"w":"and","start":2.0,"end":2.6},{"w":"airflow","start":2.6,"end":4.0}]},
+    {"id": 4, "template": "card", "seconds": 4, "image": "images/kitty_bag1.jpg", "clip": null, "headline": "Chalo, saath chalein", "bullets": [], "sticker": "🐾", "motion": "pan-left",
+     "words": [{"w":"Chalo","start":0.0,"end":1.2},{"w":"saath","start":1.2,"end":2.4},{"w":"chalein","start":2.4,"end":4.0}]}
+  ],
+  "endCard": {"brand": "Onomie", "tagline": "Chalo, saath chalein.", "cta": "Shop now, link in bio", "seconds": 3}
+}

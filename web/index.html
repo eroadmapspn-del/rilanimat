@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reel Studio</title>
+<link rel="stylesheet" href="/static/css/app.css">
+</head>
+<body>
+<header>
+  <h1>🎬 Reel Studio</h1>
+  <span class="sub">Script → Voice → Scenes → Reel. You approve every step.</span>
+</header>
+
+<div class="layout">
+  <aside class="panel side">
+    <button class="primary" style="width:100%;margin-bottom:12px" data-action="newReel">+ New reel</button>
+    <h3>Your reels</h3>
+    <div id="projects"></div>
+  </aside>
+
+  <main id="main"></main>
+
+  <aside class="panel logbox">
+    <h3>Live activity</h3>
+    <pre class="log" id="log">Waiting...</pre>
+  </aside>
+</div>
+<div id="toast"></div>
+
+<script type="module" src="/static/js/main.js"></script>
+</body>
+</html>
