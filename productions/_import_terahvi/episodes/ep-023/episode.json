@@ -1,0 +1,75 @@
+{
+  "episode_number": 23,
+  "episode_id": "EP-023",
+  "title_hi": "पहली बची हुई बच्ची",
+  "target_duration_seconds": 60,
+  "narration_hi": "रहीम ने बताया कि आठों बच्चे बाढ़ के बाद अलग-अलग सुरक्षित घरों में भेजे गए थे। कागज़ों में उनके नाम बदल दिए गए, ताकि उनके बयान पर दबाव न बनाया जा सके। यह योजना कानूनी नहीं थी; कुछ लोगों ने डर में गलत फैसले लिए थे। मीरा ने कहा, सच छिपाने से उन्हें न्याय कैसे मिलेगा? रहीम ने स्वीकार किया कि वह भी इसी सवाल से सालों भागते रहे। फिर उन्होंने एक नाम लिया—तारा। वही लाइब्रेरियन, जो पहले दिन से रास्ते के बारे में जानती थी। मीरा स्तब्ध थी। तारा मृत घोषित बच्चों में से एक थी।",
+  "narration_word_count": 97,
+  "voiceover": {
+    "language": "hi-IN",
+    "voice_id": "CONFIGURE_VOICE_ID",
+    "provider": "CONFIGURE_TTS_PROVIDER",
+    "delivery": "जांचपूर्ण, नियंत्रित तनाव",
+    "pace_wpm_target": 100,
+    "pronunciation_notes": [
+      "मीरा: मी-रा",
+      "देवगढ़: देव-गढ़",
+      "कबीर: क-बीर",
+      "अर्जुन: अर्-जुन"
+    ],
+    "pause_before_final_reveal_ms": 600,
+    "audio_path": "assets/audio/ep-023.wav",
+    "word_timestamps_path": "episodes/ep-023/word-timings.json",
+    "status": "not_generated"
+  },
+  "scenes": [
+    {
+      "scene_id": "E023-S01",
+      "estimated_start_s": 0,
+      "estimated_end_s": 20,
+      "visual_prompt_hi": "रहीम के हाथ में पुरानी बच्चों की तस्वीर। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "slow_push_in",
+      "voiceover_text": "रहीम ने बताया कि आठों बच्चे बाढ़ के बाद अलग-अलग सुरक्षित घरों में भेजे गए थे। कागज़ों में उनके नाम बदल दिए गए, ताकि उनके बयान पर दबाव न बनाया जा सके।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    },
+    {
+      "scene_id": "E023-S02",
+      "estimated_start_s": 20,
+      "estimated_end_s": 40,
+      "visual_prompt_hi": "नाम बदले हुए कार्ड। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "parallax_left",
+      "voiceover_text": "यह योजना कानूनी नहीं थी; कुछ लोगों ने डर में गलत फैसले लिए थे। मीरा ने कहा, सच छिपाने से उन्हें न्याय कैसे मिलेगा? रहीम ने स्वीकार किया कि वह भी इसी सवाल से सालों भागते रहे।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    },
+    {
+      "scene_id": "E023-S03",
+      "estimated_start_s": 40,
+      "estimated_end_s": 60,
+      "visual_prompt_hi": "लाइब्रेरी में तारा। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "slow_pull_out",
+      "voiceover_text": "फिर उन्होंने एक नाम लिया—तारा। वही लाइब्रेरियन, जो पहले दिन से रास्ते के बारे में जानती थी। मीरा स्तब्ध थी। तारा मृत घोषित बच्चों में से एक थी।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    }
+  ],
+  "audience_engagement": {
+    "question_hi": "अगर आप तारा होते, क्या अभी अपनी पहचान सार्वजनिक करते?",
+    "placement": "pinned_comment_and_optional_end_card",
+    "canon_impact": "none"
+  },
+  "continuity": {
+    "arc": "II · छिपे हुए गवाह",
+    "episode_summary_hi": "रहीम ने बताया कि आठों बच्चे बाढ़ के बाद अलग-अलग सुरक्षित घरों में भेजे गए थे। कागज़ों में उनके नाम बदल दिए गए, ताकि उनके बयान पर दबाव न बनाया जा सके। यह योजना कानूनी नहीं…",
+    "canon_status": "planned",
+    "character_id_refs": []
+  },
+  "production": {
+    "script_status": "draft",
+    "voice_status": "not_generated",
+    "image_status": "not_generated",
+    "render_status": "not_generated",
+    "final_video_path": "outputs/ep-023.mp4"
+  }
+}

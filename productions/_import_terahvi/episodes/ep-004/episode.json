@@ -1,0 +1,75 @@
+{
+  "episode_number": 4,
+  "episode_id": "EP-004",
+  "title_hi": "अलमारी के पीछे",
+  "target_duration_seconds": 60,
+  "narration_hi": "मीरा ने अलमारी हटाई तो पीछे एक संकरा रास्ता निकला, लेकिन कोई इंसान नहीं था। फ़र्श पर गीले जूतों के निशान थे, और दीवार पर बनी छोटी सी घड़ी में तेरह खांचे। कबीर ने एक तस्वीर ली। बाहर आते समय उन्हें लाइब्रेरियन तारा मिली, जिसने बिना पूछे कहा—उस रास्ते से मत जाना, पिछली बार वहाँ आठ लोग गए थे और लौटे नहीं। मीरा चौंक गई। जब अख़बारों में बच्चों को मृत बताया गया था, तब तारा को उनके जाने की बात कैसे पता थी? तारा ने तुरंत बात बदल दी। उसके कंधे पर टंगे बैग से वही नीली स्याही वाला पुराना कार्ड झाँक रहा था।",
+  "narration_word_count": 105,
+  "voiceover": {
+    "language": "hi-IN",
+    "voice_id": "CONFIGURE_VOICE_ID",
+    "provider": "CONFIGURE_TTS_PROVIDER",
+    "delivery": "धीमा, सधे हुए रहस्य के साथ",
+    "pace_wpm_target": 100,
+    "pronunciation_notes": [
+      "मीरा: मी-रा",
+      "देवगढ़: देव-गढ़",
+      "कबीर: क-बीर",
+      "अर्जुन: अर्-जुन"
+    ],
+    "pause_before_final_reveal_ms": 600,
+    "audio_path": "assets/audio/ep-004.wav",
+    "word_timestamps_path": "episodes/ep-004/word-timings.json",
+    "status": "not_generated"
+  },
+  "scenes": [
+    {
+      "scene_id": "E004-S01",
+      "estimated_start_s": 0,
+      "estimated_end_s": 20,
+      "visual_prompt_hi": "अंधेरी छिपी गलियारा। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "slow_push_in",
+      "voiceover_text": "मीरा ने अलमारी हटाई तो पीछे एक संकरा रास्ता निकला, लेकिन कोई इंसान नहीं था। फ़र्श पर गीले जूतों के निशान थे, और दीवार पर बनी छोटी सी घड़ी में तेरह खांचे। कबीर ने एक तस्वीर ली।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    },
+    {
+      "scene_id": "E004-S02",
+      "estimated_start_s": 20,
+      "estimated_end_s": 40,
+      "visual_prompt_hi": "तेरह खांचों वाला चिह्न। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "parallax_left",
+      "voiceover_text": "बाहर आते समय उन्हें लाइब्रेरियन तारा मिली, जिसने बिना पूछे कहा—उस रास्ते से मत जाना, पिछली बार वहाँ आठ लोग गए थे और लौटे नहीं। मीरा चौंक गई।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    },
+    {
+      "scene_id": "E004-S03",
+      "estimated_start_s": 40,
+      "estimated_end_s": 60,
+      "visual_prompt_hi": "तारा के बैग में नीला कार्ड। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "slow_pull_out",
+      "voiceover_text": "जब अख़बारों में बच्चों को मृत बताया गया था, तब तारा को उनके जाने की बात कैसे पता थी? तारा ने तुरंत बात बदल दी। उसके कंधे पर टंगे बैग से वही नीली स्याही वाला पुराना कार्ड झाँक रहा था।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    }
+  ],
+  "audience_engagement": {
+    "question_hi": "आज के एपिसोड “अलमारी के पीछे” में आपके हिसाब से सबसे अहम सुराग कौन-सा था?",
+    "placement": "pinned_comment_and_optional_end_card",
+    "canon_impact": "none"
+  },
+  "continuity": {
+    "arc": "I · घंटी और बच्चे",
+    "episode_summary_hi": "मीरा ने अलमारी हटाई तो पीछे एक संकरा रास्ता निकला, लेकिन कोई इंसान नहीं था। फ़र्श पर गीले जूतों के निशान थे, और दीवार पर बनी छोटी सी घड़ी में तेरह खांचे। कबीर ने एक तस्वी…",
+    "canon_status": "planned",
+    "character_id_refs": []
+  },
+  "production": {
+    "script_status": "draft",
+    "voice_status": "not_generated",
+    "image_status": "not_generated",
+    "render_status": "not_generated",
+    "final_video_path": "outputs/ep-004.mp4"
+  }
+}

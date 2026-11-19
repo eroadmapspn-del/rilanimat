@@ -1,0 +1,75 @@
+{
+  "episode_number": 60,
+  "episode_id": "EP-060",
+  "title_hi": "जब घड़ी फिर चली",
+  "target_duration_seconds": 60,
+  "narration_hi": "कुछ महीने बाद देवगढ़ के स्कूल में स्मृति-कक्ष खोला गया। वहाँ बच्चों के नाम उनकी सहमति से दर्ज किए गए; जिनकी पहचान गुप्त रखनी थी, उनके लिए आठ छोटे दीपक जलाए गए। जलाशय सुरक्षा व्यवस्था की स्वतंत्र समीक्षा शुरू हुई और पुराने फैसलों की जवाबदेही का काम जारी रहा। मीरा ने पिता की पहचान-पट्टी घड़ी के नीचे एक सुरक्षित प्रदर्शन में रख दी। शाम को घड़ी ने ठीक बारह बार घंटी बजाई। इस बार कोई तेरहवीं आवाज़ नहीं आई। फिर भी मीरा मुस्कराई, क्योंकि अब उस खामोशी का अर्थ डर नहीं था। वह शहर के जाग जाने की आवाज़ थी। और कहानी का आखिरी सवाल दर्शकों से था—क्या सच हमेशा देर से ही आता है?",
+  "narration_word_count": 115,
+  "voiceover": {
+    "language": "hi-IN",
+    "voice_id": "CONFIGURE_VOICE_ID",
+    "provider": "CONFIGURE_TTS_PROVIDER",
+    "delivery": "स्पष्ट, भावनात्मक, बिना अतिनाटकीयता",
+    "pace_wpm_target": 100,
+    "pronunciation_notes": [
+      "मीरा: मी-रा",
+      "देवगढ़: देव-गढ़",
+      "कबीर: क-बीर",
+      "अर्जुन: अर्-जुन"
+    ],
+    "pause_before_final_reveal_ms": 600,
+    "audio_path": "assets/audio/ep-060.wav",
+    "word_timestamps_path": "episodes/ep-060/word-timings.json",
+    "status": "not_generated"
+  },
+  "scenes": [
+    {
+      "scene_id": "E060-S01",
+      "estimated_start_s": 0,
+      "estimated_end_s": 20,
+      "visual_prompt_hi": "स्मृति-कक्ष में आठ दीपक। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "slow_push_in",
+      "voiceover_text": "कुछ महीने बाद देवगढ़ के स्कूल में स्मृति-कक्ष खोला गया। वहाँ बच्चों के नाम उनकी सहमति से दर्ज किए गए; जिनकी पहचान गुप्त रखनी थी, उनके लिए आठ छोटे दीपक जलाए गए।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    },
+    {
+      "scene_id": "E060-S02",
+      "estimated_start_s": 20,
+      "estimated_end_s": 40,
+      "visual_prompt_hi": "अर्जुन की प्रेस आईडी का प्रदर्शन। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "parallax_left",
+      "voiceover_text": "जलाशय सुरक्षा व्यवस्था की स्वतंत्र समीक्षा शुरू हुई और पुराने फैसलों की जवाबदेही का काम जारी रहा। मीरा ने पिता की पहचान-पट्टी घड़ी के नीचे एक सुरक्षित प्रदर्शन में रख दी। शाम को घड़ी ने ठीक बारह बार घंटी बजाई। इस बार कोई तेरहवीं आवाज़ नहीं आई।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    },
+    {
+      "scene_id": "E060-S03",
+      "estimated_start_s": 40,
+      "estimated_end_s": 60,
+      "visual_prompt_hi": "रोशन नगर घड़ी और शांत शहर। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "slow_pull_out",
+      "voiceover_text": "फिर भी मीरा मुस्कराई, क्योंकि अब उस खामोशी का अर्थ डर नहीं था। वह शहर के जाग जाने की आवाज़ थी। और कहानी का आखिरी सवाल दर्शकों से था—क्या सच हमेशा देर से ही आता है?",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    }
+  ],
+  "audience_engagement": {
+    "question_hi": "क्या देर से मिला सच भी किसी शहर को बदल सकता है?",
+    "placement": "pinned_comment_and_optional_end_card",
+    "canon_impact": "none"
+  },
+  "continuity": {
+    "arc": "IV · सच और जवाबदेही",
+    "episode_summary_hi": "कुछ महीने बाद देवगढ़ के स्कूल में स्मृति-कक्ष खोला गया। वहाँ बच्चों के नाम उनकी सहमति से दर्ज किए गए; जिनकी पहचान गुप्त रखनी थी, उनके लिए आठ छोटे दीपक जलाए गए। जलाशय सुरक…",
+    "canon_status": "planned",
+    "character_id_refs": []
+  },
+  "production": {
+    "script_status": "draft",
+    "voice_status": "not_generated",
+    "image_status": "not_generated",
+    "render_status": "not_generated",
+    "final_video_path": "outputs/ep-060.mp4"
+  }
+}

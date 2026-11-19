@@ -1,0 +1,75 @@
+{
+  "episode_number": 22,
+  "episode_id": "EP-022",
+  "title_hi": "रहीम का इक़रार",
+  "target_duration_seconds": 60,
+  "narration_hi": "मीरा सीधे रहीम चाचा की दुकान पहुँची। उन्होंने इंकार नहीं किया। उन्होंने बताया कि बाढ़ की चेतावनी मिलते ही उन्होंने आठ बच्चों को स्कूल से निकालकर सुरंग में उतारा। नंदिनी उनके साथ थीं। बाहर लोगों को बचाने के लिए समय नहीं था, इसलिए अर्जुन ने नियंत्रण कक्ष की ओर दौड़ लगाई। मीरा ने पूछा, फिर बच्चों को मृत क्यों बताया गया? रहीम ने सिर झुका लिया। क्योंकि जिस सुरक्षित ठिकाने तक वे पहुँचे थे, उसकी जानकारी सामने आती, तो उन बच्चों के परिवारों तक पहुँचने का रास्ता भी उन लोगों को मिल जाता जो सबूत मिटाना चाहते थे।",
+  "narration_word_count": 98,
+  "voiceover": {
+    "language": "hi-IN",
+    "voice_id": "CONFIGURE_VOICE_ID",
+    "provider": "CONFIGURE_TTS_PROVIDER",
+    "delivery": "जांचपूर्ण, नियंत्रित तनाव",
+    "pace_wpm_target": 100,
+    "pronunciation_notes": [
+      "मीरा: मी-रा",
+      "देवगढ़: देव-गढ़",
+      "कबीर: क-बीर",
+      "अर्जुन: अर्-जुन"
+    ],
+    "pause_before_final_reveal_ms": 600,
+    "audio_path": "assets/audio/ep-022.wav",
+    "word_timestamps_path": "episodes/ep-022/word-timings.json",
+    "status": "not_generated"
+  },
+  "scenes": [
+    {
+      "scene_id": "E022-S01",
+      "estimated_start_s": 0,
+      "estimated_end_s": 20,
+      "visual_prompt_hi": "घड़ी की दुकान में बैठे रहीम। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "slow_push_in",
+      "voiceover_text": "मीरा सीधे रहीम चाचा की दुकान पहुँची। उन्होंने इंकार नहीं किया। उन्होंने बताया कि बाढ़ की चेतावनी मिलते ही उन्होंने आठ बच्चों को स्कूल से निकालकर सुरंग में उतारा। नंदिनी उनके साथ थीं।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    },
+    {
+      "scene_id": "E022-S02",
+      "estimated_start_s": 20,
+      "estimated_end_s": 40,
+      "visual_prompt_hi": "लालटेन वाली सुरंग का फ्लैशबैक। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "parallax_left",
+      "voiceover_text": "बाहर लोगों को बचाने के लिए समय नहीं था, इसलिए अर्जुन ने नियंत्रण कक्ष की ओर दौड़ लगाई। मीरा ने पूछा, फिर बच्चों को मृत क्यों बताया गया? रहीम ने सिर झुका लिया।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    },
+    {
+      "scene_id": "E022-S03",
+      "estimated_start_s": 40,
+      "estimated_end_s": 60,
+      "visual_prompt_hi": "बंद अलमारी में बच्चों के कार्ड। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "slow_pull_out",
+      "voiceover_text": "क्योंकि जिस सुरक्षित ठिकाने तक वे पहुँचे थे, उसकी जानकारी सामने आती, तो उन बच्चों के परिवारों तक पहुँचने का रास्ता भी उन लोगों को मिल जाता जो सबूत मिटाना चाहते थे।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    }
+  ],
+  "audience_engagement": {
+    "question_hi": "आज के एपिसोड “रहीम का इक़रार” में आपके हिसाब से सबसे अहम सुराग कौन-सा था?",
+    "placement": "pinned_comment_and_optional_end_card",
+    "canon_impact": "none"
+  },
+  "continuity": {
+    "arc": "II · छिपे हुए गवाह",
+    "episode_summary_hi": "मीरा सीधे रहीम चाचा की दुकान पहुँची। उन्होंने इंकार नहीं किया। उन्होंने बताया कि बाढ़ की चेतावनी मिलते ही उन्होंने आठ बच्चों को स्कूल से निकालकर सुरंग में उतारा। नंदिनी उ…",
+    "canon_status": "planned",
+    "character_id_refs": []
+  },
+  "production": {
+    "script_status": "draft",
+    "voice_status": "not_generated",
+    "image_status": "not_generated",
+    "render_status": "not_generated",
+    "final_video_path": "outputs/ep-022.mp4"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "episode_number": 58,
+  "episode_id": "EP-058",
+  "title_hi": "सच का प्रसारण",
+  "target_duration_seconds": 60,
+  "narration_hi": "मीरा की डॉक्यूमेंट्री प्रकाशित हुई। उसमें घटनाओं की समयरेखा, सत्यापित आदेश, सायरन लॉग, विनय की रिपोर्ट और गवाहों की अनुमति से दिए बयान शामिल थे। उसने स्पष्ट किया कि आठ बच्चों को मृत घोषित करना गलत था और उनकी वर्तमान पहचान उनकी मर्जी के बिना उजागर नहीं की जाएगी। जांच एजेंसियों ने नए साक्ष्य दर्ज किए। विक्रम और महेश ने अपनी सफाई दी; आगे क्या कानूनी निष्कर्ष निकलेगा, यह अदालत पर था। इस बार मीरा ने सनसनी नहीं, प्रमाण चुना। वीडियो के अंत में उसने नगर घड़ी दिखाई। उसकी सूइयाँ पहली बार फिर चल रही थीं।",
+  "narration_word_count": 96,
+  "voiceover": {
+    "language": "hi-IN",
+    "voice_id": "CONFIGURE_VOICE_ID",
+    "provider": "CONFIGURE_TTS_PROVIDER",
+    "delivery": "स्पष्ट, भावनात्मक, बिना अतिनाटकीयता",
+    "pace_wpm_target": 100,
+    "pronunciation_notes": [
+      "मीरा: मी-रा",
+      "देवगढ़: देव-गढ़",
+      "कबीर: क-बीर",
+      "अर्जुन: अर्-जुन"
+    ],
+    "pause_before_final_reveal_ms": 600,
+    "audio_path": "assets/audio/ep-058.wav",
+    "word_timestamps_path": "episodes/ep-058/word-timings.json",
+    "status": "not_generated"
+  },
+  "scenes": [
+    {
+      "scene_id": "E058-S01",
+      "estimated_start_s": 0,
+      "estimated_end_s": 20,
+      "visual_prompt_hi": "डॉक्यूमेंट्री वीडियो के फ्रेम। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "slow_push_in",
+      "voiceover_text": "मीरा की डॉक्यूमेंट्री प्रकाशित हुई। उसमें घटनाओं की समयरेखा, सत्यापित आदेश, सायरन लॉग, विनय की रिपोर्ट और गवाहों की अनुमति से दिए बयान शामिल थे।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    },
+    {
+      "scene_id": "E058-S02",
+      "estimated_start_s": 20,
+      "estimated_end_s": 40,
+      "visual_prompt_hi": "दस्तावेज़ों की सार्वजनिक टाइमलाइन। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "parallax_left",
+      "voiceover_text": "उसने स्पष्ट किया कि आठ बच्चों को मृत घोषित करना गलत था और उनकी वर्तमान पहचान उनकी मर्जी के बिना उजागर नहीं की जाएगी। जांच एजेंसियों ने नए साक्ष्य दर्ज किए।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    },
+    {
+      "scene_id": "E058-S03",
+      "estimated_start_s": 40,
+      "estimated_end_s": 60,
+      "visual_prompt_hi": "चलती हुई नगर घड़ी। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "slow_pull_out",
+      "voiceover_text": "विक्रम और महेश ने अपनी सफाई दी; आगे क्या कानूनी निष्कर्ष निकलेगा, यह अदालत पर था। इस बार मीरा ने सनसनी नहीं, प्रमाण चुना। वीडियो के अंत में उसने नगर घड़ी दिखाई। उसकी सूइयाँ पहली बार फिर चल रही थीं।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    }
+  ],
+  "audience_engagement": {
+    "question_hi": "आज के एपिसोड “सच का प्रसारण” में आपके हिसाब से सबसे अहम सुराग कौन-सा था?",
+    "placement": "pinned_comment_and_optional_end_card",
+    "canon_impact": "none"
+  },
+  "continuity": {
+    "arc": "IV · सच और जवाबदेही",
+    "episode_summary_hi": "मीरा की डॉक्यूमेंट्री प्रकाशित हुई। उसमें घटनाओं की समयरेखा, सत्यापित आदेश, सायरन लॉग, विनय की रिपोर्ट और गवाहों की अनुमति से दिए बयान शामिल थे। उसने स्पष्ट किया कि आठ बच…",
+    "canon_status": "planned",
+    "character_id_refs": []
+  },
+  "production": {
+    "script_status": "draft",
+    "voice_status": "not_generated",
+    "image_status": "not_generated",
+    "render_status": "not_generated",
+    "final_video_path": "outputs/ep-058.mp4"
+  }
+}

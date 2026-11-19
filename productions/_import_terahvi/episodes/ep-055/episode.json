@@ -1,0 +1,75 @@
+{
+  "episode_number": 55,
+  "episode_id": "EP-055",
+  "title_hi": "गोदाम का निरीक्षण",
+  "target_duration_seconds": 60,
+  "narration_hi": "न्यायिक आदेश मिलने के बाद अधिकारी गोदाम पहुँचे। मीरा दूर से निरीक्षण देख रही थी; उसने किसी को कानून हाथ में लेने के लिए नहीं उकसाया। बक्सों की सूची में कई पन्ने गायब थे, लेकिन एक लोहे का संदूक अब भी सील था। उसमें नियंत्रण कक्ष का मूल लॉग, सायरन की रखरखाव फाइल और समारोह के आदेश मिले। हस्ताक्षरों की पुष्टि हुई और दस्तावेज़ों की आधिकारिक प्रतियाँ सुरक्षित की गईं। तभी अधिकारियों को एक अलग कागज़ मिला, जिस पर अर्जुन का नाम था। शीर्षक था—स्वैच्छिक गवाह बयान। मीरा ने पहली बार जाना कि पिता ने अपनी बात लिखकर भी जमा की थी।",
+  "narration_word_count": 102,
+  "voiceover": {
+    "language": "hi-IN",
+    "voice_id": "CONFIGURE_VOICE_ID",
+    "provider": "CONFIGURE_TTS_PROVIDER",
+    "delivery": "स्पष्ट, भावनात्मक, बिना अतिनाटकीयता",
+    "pace_wpm_target": 100,
+    "pronunciation_notes": [
+      "मीरा: मी-रा",
+      "देवगढ़: देव-गढ़",
+      "कबीर: क-बीर",
+      "अर्जुन: अर्-जुन"
+    ],
+    "pause_before_final_reveal_ms": 600,
+    "audio_path": "assets/audio/ep-055.wav",
+    "word_timestamps_path": "episodes/ep-055/word-timings.json",
+    "status": "not_generated"
+  },
+  "scenes": [
+    {
+      "scene_id": "E055-S01",
+      "estimated_start_s": 0,
+      "estimated_end_s": 20,
+      "visual_prompt_hi": "आदेश के साथ निरीक्षण दल। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "slow_push_in",
+      "voiceover_text": "न्यायिक आदेश मिलने के बाद अधिकारी गोदाम पहुँचे। मीरा दूर से निरीक्षण देख रही थी; उसने किसी को कानून हाथ में लेने के लिए नहीं उकसाया।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    },
+    {
+      "scene_id": "E055-S02",
+      "estimated_start_s": 20,
+      "estimated_end_s": 40,
+      "visual_prompt_hi": "सीलबंद लोहे का संदूक। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "parallax_left",
+      "voiceover_text": "बक्सों की सूची में कई पन्ने गायब थे, लेकिन एक लोहे का संदूक अब भी सील था। उसमें नियंत्रण कक्ष का मूल लॉग, सायरन की रखरखाव फाइल और समारोह के आदेश मिले। हस्ताक्षरों की पुष्टि हुई और दस्तावेज़ों की आधिकारिक प्रतियाँ सुरक्षित की गईं।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    },
+    {
+      "scene_id": "E055-S03",
+      "estimated_start_s": 40,
+      "estimated_end_s": 60,
+      "visual_prompt_hi": "अर्जुन का गवाह बयान। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "slow_pull_out",
+      "voiceover_text": "तभी अधिकारियों को एक अलग कागज़ मिला, जिस पर अर्जुन का नाम था। शीर्षक था—स्वैच्छिक गवाह बयान। मीरा ने पहली बार जाना कि पिता ने अपनी बात लिखकर भी जमा की थी।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    }
+  ],
+  "audience_engagement": {
+    "question_hi": "मूल रिकॉर्ड मिलने पर क्या रहस्य सुलझ जाएगा?",
+    "placement": "pinned_comment_and_optional_end_card",
+    "canon_impact": "none"
+  },
+  "continuity": {
+    "arc": "IV · सच और जवाबदेही",
+    "episode_summary_hi": "न्यायिक आदेश मिलने के बाद अधिकारी गोदाम पहुँचे। मीरा दूर से निरीक्षण देख रही थी; उसने किसी को कानून हाथ में लेने के लिए नहीं उकसाया। बक्सों की सूची में कई पन्ने गायब थे, …",
+    "canon_status": "planned",
+    "character_id_refs": []
+  },
+  "production": {
+    "script_status": "draft",
+    "voice_status": "not_generated",
+    "image_status": "not_generated",
+    "render_status": "not_generated",
+    "final_video_path": "outputs/ep-055.mp4"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "episode_number": 42,
+  "episode_id": "EP-042",
+  "title_hi": "तेरहवीं घंटी की योजना",
+  "target_duration_seconds": 60,
+  "narration_hi": "अर्जुन ने बताया था कि तेरहवीं घंटी किसी आत्मा की आवाज़ नहीं, रिकॉर्डिंग का संकेत है। उन्होंने रहीम की मदद से घड़ी में एक छिपा ध्वनि-कोड बनाया। हर अंतराल एक संख्या बताता था। ये संख्याएँ सबूतों के अलग-अलग ठिकानों तक पहुँचाती थीं। लेकिन अर्जुन ने पूरी योजना किसी एक व्यक्ति को नहीं बताई। ताकि कोई दबाव में आकर सब कुछ न बता सके। मीरा अब तक कई हिस्से जोड़ चुकी थी, फिर भी मुख्य ऑडियो गायब था। कैसेट के अंत में अर्जुन ने कहा—मूल आवाज़ को वहीं खोजो जहाँ उस रात पूरे शहर ने उसे सुनना चाहिए था।",
+  "narration_word_count": 98,
+  "voiceover": {
+    "language": "hi-IN",
+    "voice_id": "CONFIGURE_VOICE_ID",
+    "provider": "CONFIGURE_TTS_PROVIDER",
+    "delivery": "जांचपूर्ण, नियंत्रित तनाव",
+    "pace_wpm_target": 100,
+    "pronunciation_notes": [
+      "मीरा: मी-रा",
+      "देवगढ़: देव-गढ़",
+      "कबीर: क-बीर",
+      "अर्जुन: अर्-जुन"
+    ],
+    "pause_before_final_reveal_ms": 600,
+    "audio_path": "assets/audio/ep-042.wav",
+    "word_timestamps_path": "episodes/ep-042/word-timings.json",
+    "status": "not_generated"
+  },
+  "scenes": [
+    {
+      "scene_id": "E042-S01",
+      "estimated_start_s": 0,
+      "estimated_end_s": 20,
+      "visual_prompt_hi": "घड़ी के भीतर गुप्त ध्वनि तंत्र। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "slow_push_in",
+      "voiceover_text": "अर्जुन ने बताया था कि तेरहवीं घंटी किसी आत्मा की आवाज़ नहीं, रिकॉर्डिंग का संकेत है। उन्होंने रहीम की मदद से घड़ी में एक छिपा ध्वनि-कोड बनाया। हर अंतराल एक संख्या बताता था।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    },
+    {
+      "scene_id": "E042-S02",
+      "estimated_start_s": 20,
+      "estimated_end_s": 40,
+      "visual_prompt_hi": "कई ठिकानों वाला नक्शा। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "parallax_left",
+      "voiceover_text": "ये संख्याएँ सबूतों के अलग-अलग ठिकानों तक पहुँचाती थीं। लेकिन अर्जुन ने पूरी योजना किसी एक व्यक्ति को नहीं बताई। ताकि कोई दबाव में आकर सब कुछ न बता सके।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    },
+    {
+      "scene_id": "E042-S03",
+      "estimated_start_s": 40,
+      "estimated_end_s": 60,
+      "visual_prompt_hi": "आपात सायरन की ऊँची मीनार। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "slow_pull_out",
+      "voiceover_text": "मीरा अब तक कई हिस्से जोड़ चुकी थी, फिर भी मुख्य ऑडियो गायब था। कैसेट के अंत में अर्जुन ने कहा—मूल आवाज़ को वहीं खोजो जहाँ उस रात पूरे शहर ने उसे सुनना चाहिए था।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    }
+  ],
+  "audience_engagement": {
+    "question_hi": "आज के एपिसोड “तेरहवीं घंटी की योजना” में आपके हिसाब से सबसे अहम सुराग कौन-सा था?",
+    "placement": "pinned_comment_and_optional_end_card",
+    "canon_impact": "none"
+  },
+  "continuity": {
+    "arc": "III · मूल रिकॉर्ड की तलाश",
+    "episode_summary_hi": "अर्जुन ने बताया था कि तेरहवीं घंटी किसी आत्मा की आवाज़ नहीं, रिकॉर्डिंग का संकेत है। उन्होंने रहीम की मदद से घड़ी में एक छिपा ध्वनि-कोड बनाया। हर अंतराल एक संख्या बताता थ…",
+    "canon_status": "planned",
+    "character_id_refs": []
+  },
+  "production": {
+    "script_status": "draft",
+    "voice_status": "not_generated",
+    "image_status": "not_generated",
+    "render_status": "not_generated",
+    "final_video_path": "outputs/ep-042.mp4"
+  }
+}

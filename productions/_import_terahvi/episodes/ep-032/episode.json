@@ -1,0 +1,75 @@
+{
+  "episode_number": 32,
+  "episode_id": "EP-032",
+  "title_hi": "रहीम की अधूरी सच्चाई",
+  "target_duration_seconds": 60,
+  "narration_hi": "रहीम ने स्वीकार किया कि उन्होंने ही हाल में टेप चलाया, ताकि मीरा को सही रास्ता मिल सके। उनकी तबीयत बिगड़ रही थी और उन्हें डर था कि सबूत हमेशा के लिए मिट जाएंगे। मगर मीरा ने पूछा, तब पहले सीधे सच क्यों नहीं बताया? रहीम बोले, क्योंकि मुझे विश्वास नहीं था कि कौन किसके साथ है। अर्जुन ने अपनी रिकॉर्डिंग को कई हिस्सों में बाँटा था। किसी एक के पकड़े जाने से पूरा सच न मिटे, यही योजना थी। टेप का अगला भाग खोजने के लिए उन्होंने एक कागज़ दिया। उस पर एक वाक्य था—जहाँ तेरहवीं घंटी नहीं बजती, वहाँ तेरहवीं चाबी मिलेगी।",
+  "narration_word_count": 104,
+  "voiceover": {
+    "language": "hi-IN",
+    "voice_id": "CONFIGURE_VOICE_ID",
+    "provider": "CONFIGURE_TTS_PROVIDER",
+    "delivery": "जांचपूर्ण, नियंत्रित तनाव",
+    "pace_wpm_target": 100,
+    "pronunciation_notes": [
+      "मीरा: मी-रा",
+      "देवगढ़: देव-गढ़",
+      "कबीर: क-बीर",
+      "अर्जुन: अर्-जुन"
+    ],
+    "pause_before_final_reveal_ms": 600,
+    "audio_path": "assets/audio/ep-032.wav",
+    "word_timestamps_path": "episodes/ep-032/word-timings.json",
+    "status": "not_generated"
+  },
+  "scenes": [
+    {
+      "scene_id": "E032-S01",
+      "estimated_start_s": 0,
+      "estimated_end_s": 20,
+      "visual_prompt_hi": "रहीम का अपराधबोध भरा चेहरा। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "slow_push_in",
+      "voiceover_text": "रहीम ने स्वीकार किया कि उन्होंने ही हाल में टेप चलाया, ताकि मीरा को सही रास्ता मिल सके। उनकी तबीयत बिगड़ रही थी और उन्हें डर था कि सबूत हमेशा के लिए मिट जाएंगे।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    },
+    {
+      "scene_id": "E032-S02",
+      "estimated_start_s": 20,
+      "estimated_end_s": 40,
+      "visual_prompt_hi": "कई टेप डिब्बे। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "parallax_left",
+      "voiceover_text": "मगर मीरा ने पूछा, तब पहले सीधे सच क्यों नहीं बताया? रहीम बोले, क्योंकि मुझे विश्वास नहीं था कि कौन किसके साथ है। अर्जुन ने अपनी रिकॉर्डिंग को कई हिस्सों में बाँटा था।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    },
+    {
+      "scene_id": "E032-S03",
+      "estimated_start_s": 40,
+      "estimated_end_s": 60,
+      "visual_prompt_hi": "तेरहवीं चाबी वाली पर्ची। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "slow_pull_out",
+      "voiceover_text": "किसी एक के पकड़े जाने से पूरा सच न मिटे, यही योजना थी। टेप का अगला भाग खोजने के लिए उन्होंने एक कागज़ दिया। उस पर एक वाक्य था—जहाँ तेरहवीं घंटी नहीं बजती, वहाँ तेरहवीं चाबी मिलेगी।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    }
+  ],
+  "audience_engagement": {
+    "question_hi": "आज के एपिसोड “रहीम की अधूरी सच्चाई” में आपके हिसाब से सबसे अहम सुराग कौन-सा था?",
+    "placement": "pinned_comment_and_optional_end_card",
+    "canon_impact": "none"
+  },
+  "continuity": {
+    "arc": "III · मूल रिकॉर्ड की तलाश",
+    "episode_summary_hi": "रहीम ने स्वीकार किया कि उन्होंने ही हाल में टेप चलाया, ताकि मीरा को सही रास्ता मिल सके। उनकी तबीयत बिगड़ रही थी और उन्हें डर था कि सबूत हमेशा के लिए मिट जाएंगे। मगर मीरा …",
+    "canon_status": "planned",
+    "character_id_refs": []
+  },
+  "production": {
+    "script_status": "draft",
+    "voice_status": "not_generated",
+    "image_status": "not_generated",
+    "render_status": "not_generated",
+    "final_video_path": "outputs/ep-032.mp4"
+  }
+}

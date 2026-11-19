@@ -1,0 +1,75 @@
+{
+  "episode_number": 54,
+  "episode_id": "EP-054",
+  "title_hi": "गायब अंतिम प्रति",
+  "target_duration_seconds": 60,
+  "narration_hi": "पुराने कार्यालय का नवीनीकरण शुरू होने वाला था। दीपा ने आदेश की रिकॉर्ड कॉपी ढूँढने के लिए कानूनी अभिलेख अनुरोध दायर किया। कागज में एक संदर्भ था—मूल प्रति तहसील के रिकॉर्ड कमरे में सुरक्षित। मीरा ने राहत की साँस ली, लेकिन वहाँ पहुँचने पर पता चला कि रिकॉर्ड के बक्से पिछले सप्ताह स्थानांतरित कर दिए गए थे। नया गोदाम उसी कंपनी के नियंत्रण में था जिसने रिसॉर्ट बनाया था। वकील ने अदालत से दस्तावेज़ सुरक्षित रखने की तत्काल मांग की। अब सबूत की दौड़ तेज़ थी। गोदाम के बाहर कैमरों की लाल बत्तियाँ जल रही थीं।",
+  "narration_word_count": 96,
+  "voiceover": {
+    "language": "hi-IN",
+    "voice_id": "CONFIGURE_VOICE_ID",
+    "provider": "CONFIGURE_TTS_PROVIDER",
+    "delivery": "स्पष्ट, भावनात्मक, बिना अतिनाटकीयता",
+    "pace_wpm_target": 100,
+    "pronunciation_notes": [
+      "मीरा: मी-रा",
+      "देवगढ़: देव-गढ़",
+      "कबीर: क-बीर",
+      "अर्जुन: अर्-जुन"
+    ],
+    "pause_before_final_reveal_ms": 600,
+    "audio_path": "assets/audio/ep-054.wav",
+    "word_timestamps_path": "episodes/ep-054/word-timings.json",
+    "status": "not_generated"
+  },
+  "scenes": [
+    {
+      "scene_id": "E054-S01",
+      "estimated_start_s": 0,
+      "estimated_end_s": 20,
+      "visual_prompt_hi": "तहसील रिकॉर्ड कमरा। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "slow_push_in",
+      "voiceover_text": "पुराने कार्यालय का नवीनीकरण शुरू होने वाला था। दीपा ने आदेश की रिकॉर्ड कॉपी ढूँढने के लिए कानूनी अभिलेख अनुरोध दायर किया। कागज में एक संदर्भ था—मूल प्रति तहसील के रिकॉर्ड कमरे में सुरक्षित।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    },
+    {
+      "scene_id": "E054-S02",
+      "estimated_start_s": 20,
+      "estimated_end_s": 40,
+      "visual_prompt_hi": "स्थानांतरित बक्सों की ट्रॉली। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "parallax_left",
+      "voiceover_text": "मीरा ने राहत की साँस ली, लेकिन वहाँ पहुँचने पर पता चला कि रिकॉर्ड के बक्से पिछले सप्ताह स्थानांतरित कर दिए गए थे। नया गोदाम उसी कंपनी के नियंत्रण में था जिसने रिसॉर्ट बनाया था।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    },
+    {
+      "scene_id": "E054-S03",
+      "estimated_start_s": 40,
+      "estimated_end_s": 60,
+      "visual_prompt_hi": "गोदाम की लाल कैमरा लाइट। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "slow_pull_out",
+      "voiceover_text": "वकील ने अदालत से दस्तावेज़ सुरक्षित रखने की तत्काल मांग की। अब सबूत की दौड़ तेज़ थी। गोदाम के बाहर कैमरों की लाल बत्तियाँ जल रही थीं।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    }
+  ],
+  "audience_engagement": {
+    "question_hi": "आज के एपिसोड “गायब अंतिम प्रति” में आपके हिसाब से सबसे अहम सुराग कौन-सा था?",
+    "placement": "pinned_comment_and_optional_end_card",
+    "canon_impact": "none"
+  },
+  "continuity": {
+    "arc": "IV · सच और जवाबदेही",
+    "episode_summary_hi": "पुराने कार्यालय का नवीनीकरण शुरू होने वाला था। दीपा ने आदेश की रिकॉर्ड कॉपी ढूँढने के लिए कानूनी अभिलेख अनुरोध दायर किया। कागज में एक संदर्भ था—मूल प्रति तहसील के रिकॉर्ड…",
+    "canon_status": "planned",
+    "character_id_refs": []
+  },
+  "production": {
+    "script_status": "draft",
+    "voice_status": "not_generated",
+    "image_status": "not_generated",
+    "render_status": "not_generated",
+    "final_video_path": "outputs/ep-054.mp4"
+  }
+}

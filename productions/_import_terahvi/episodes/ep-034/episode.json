@@ -1,0 +1,75 @@
+{
+  "episode_number": 34,
+  "episode_id": "EP-034",
+  "title_hi": "लॉकर जो जमीन में था",
+  "target_duration_seconds": 60,
+  "narration_hi": "एक टाइल पर तेरह नंबर की जगह सिर्फ़ खरोंच थी। मीरा ने उँगली से धूल हटाई तो पीतल का छोटा छल्ला मिला। टाइल उठाने पर नीचे धातु का डिब्बा था। तेरहवीं चाबी उसमें फिट बैठी। अंदर एक ऑडियो कैसेट और तीन तस्वीरें थीं। पहली तस्वीर जलाशय के फाटक की, दूसरी नगराध्यक्ष की गाड़ी की, और तीसरी स्कूल के बच्चों की। लेकिन तीसरी तस्वीर में नौ चेहरे थे। मीरा ने गिना—आठ बच्चे और एक युवक। उसकी जैकेट पर नगर जल संसाधन विभाग का निशान था। वह कौन था जिसने बच्चों को देखा और कभी अपना नाम नहीं बताया?",
+  "narration_word_count": 97,
+  "voiceover": {
+    "language": "hi-IN",
+    "voice_id": "CONFIGURE_VOICE_ID",
+    "provider": "CONFIGURE_TTS_PROVIDER",
+    "delivery": "जांचपूर्ण, नियंत्रित तनाव",
+    "pace_wpm_target": 100,
+    "pronunciation_notes": [
+      "मीरा: मी-रा",
+      "देवगढ़: देव-गढ़",
+      "कबीर: क-बीर",
+      "अर्जुन: अर्-जुन"
+    ],
+    "pause_before_final_reveal_ms": 600,
+    "audio_path": "assets/audio/ep-034.wav",
+    "word_timestamps_path": "episodes/ep-034/word-timings.json",
+    "status": "not_generated"
+  },
+  "scenes": [
+    {
+      "scene_id": "E034-S01",
+      "estimated_start_s": 0,
+      "estimated_end_s": 20,
+      "visual_prompt_hi": "फर्श के नीचे धातु लॉकर। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "slow_push_in",
+      "voiceover_text": "एक टाइल पर तेरह नंबर की जगह सिर्फ़ खरोंच थी। मीरा ने उँगली से धूल हटाई तो पीतल का छोटा छल्ला मिला। टाइल उठाने पर नीचे धातु का डिब्बा था।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    },
+    {
+      "scene_id": "E034-S02",
+      "estimated_start_s": 20,
+      "estimated_end_s": 40,
+      "visual_prompt_hi": "तीन तस्वीरें। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "parallax_left",
+      "voiceover_text": "तेरहवीं चाबी उसमें फिट बैठी। अंदर एक ऑडियो कैसेट और तीन तस्वीरें थीं। पहली तस्वीर जलाशय के फाटक की, दूसरी नगराध्यक्ष की गाड़ी की, और तीसरी स्कूल के बच्चों की। लेकिन तीसरी तस्वीर में नौ चेहरे थे।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    },
+    {
+      "scene_id": "E034-S03",
+      "estimated_start_s": 40,
+      "estimated_end_s": 60,
+      "visual_prompt_hi": "नौ चेहरों वाली समूह तस्वीर। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "slow_pull_out",
+      "voiceover_text": "मीरा ने गिना—आठ बच्चे और एक युवक। उसकी जैकेट पर नगर जल संसाधन विभाग का निशान था। वह कौन था जिसने बच्चों को देखा और कभी अपना नाम नहीं बताया?",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    }
+  ],
+  "audience_engagement": {
+    "question_hi": "नौवीं तस्वीर वाला युवक कौन हो सकता है?",
+    "placement": "pinned_comment_and_optional_end_card",
+    "canon_impact": "none"
+  },
+  "continuity": {
+    "arc": "III · मूल रिकॉर्ड की तलाश",
+    "episode_summary_hi": "एक टाइल पर तेरह नंबर की जगह सिर्फ़ खरोंच थी। मीरा ने उँगली से धूल हटाई तो पीतल का छोटा छल्ला मिला। टाइल उठाने पर नीचे धातु का डिब्बा था। तेरहवीं चाबी उसमें फिट बैठी। अंदर…",
+    "canon_status": "planned",
+    "character_id_refs": []
+  },
+  "production": {
+    "script_status": "draft",
+    "voice_status": "not_generated",
+    "image_status": "not_generated",
+    "render_status": "not_generated",
+    "final_video_path": "outputs/ep-034.mp4"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "episode_number": 53,
+  "episode_id": "EP-053",
+  "title_hi": "गवाहों की सुरक्षा",
+  "target_duration_seconds": 60,
+  "narration_hi": "मीरा ने आठ बचाए गए लोगों की पहचान सार्वजनिक करने से इंकार किया। किसी की आज की जिंदगी को सनसनीखेज वीडियो के लिए जोखिम में डालना सही नहीं था। आर्या और तारा ने अपने बयान स्वतंत्र वकील के पास जमा कराए। विनय ने तकनीकी रिपोर्ट प्रमाणित की। नंदिनी ने माना कि बच्चों के नाम बदलने में नियम तोड़े गए थे और वह भी समीक्षा का सामना करने को तैयार थीं। रहीम ने अपना हिस्सा लिखित रूप में दिया। अब कहानी किसी अकेले पत्रकार की नहीं रही थी। यह कई लोगों के साहस, गलतियों और देर से उठाई गई आवाज़ की कहानी बन गई। तभी दीपा ने कहा—एक समस्या है, मूल आदेश की अंतिम प्रति अभी भी गायब है।",
+  "narration_word_count": 118,
+  "voiceover": {
+    "language": "hi-IN",
+    "voice_id": "CONFIGURE_VOICE_ID",
+    "provider": "CONFIGURE_TTS_PROVIDER",
+    "delivery": "स्पष्ट, भावनात्मक, बिना अतिनाटकीयता",
+    "pace_wpm_target": 100,
+    "pronunciation_notes": [
+      "मीरा: मी-रा",
+      "देवगढ़: देव-गढ़",
+      "कबीर: क-बीर",
+      "अर्जुन: अर्-जुन"
+    ],
+    "pause_before_final_reveal_ms": 600,
+    "audio_path": "assets/audio/ep-053.wav",
+    "word_timestamps_path": "episodes/ep-053/word-timings.json",
+    "status": "not_generated"
+  },
+  "scenes": [
+    {
+      "scene_id": "E053-S01",
+      "estimated_start_s": 0,
+      "estimated_end_s": 20,
+      "visual_prompt_hi": "बिना चेहरे वाले गवाह। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "slow_push_in",
+      "voiceover_text": "मीरा ने आठ बचाए गए लोगों की पहचान सार्वजनिक करने से इंकार किया। किसी की आज की जिंदगी को सनसनीखेज वीडियो के लिए जोखिम में डालना सही नहीं था। आर्या और तारा ने अपने बयान स्वतंत्र वकील के पास जमा कराए।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    },
+    {
+      "scene_id": "E053-S02",
+      "estimated_start_s": 20,
+      "estimated_end_s": 40,
+      "visual_prompt_hi": "सीलबंद बयान। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "parallax_left",
+      "voiceover_text": "विनय ने तकनीकी रिपोर्ट प्रमाणित की। नंदिनी ने माना कि बच्चों के नाम बदलने में नियम तोड़े गए थे और वह भी समीक्षा का सामना करने को तैयार थीं। रहीम ने अपना हिस्सा लिखित रूप में दिया।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    },
+    {
+      "scene_id": "E053-S03",
+      "estimated_start_s": 40,
+      "estimated_end_s": 60,
+      "visual_prompt_hi": "खाली फाइल फ़ोल्डर। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "slow_pull_out",
+      "voiceover_text": "अब कहानी किसी अकेले पत्रकार की नहीं रही थी। यह कई लोगों के साहस, गलतियों और देर से उठाई गई आवाज़ की कहानी बन गई। तभी दीपा ने कहा—एक समस्या है, मूल आदेश की अंतिम प्रति अभी भी गायब है।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    }
+  ],
+  "audience_engagement": {
+    "question_hi": "आज के एपिसोड “गवाहों की सुरक्षा” में आपके हिसाब से सबसे अहम सुराग कौन-सा था?",
+    "placement": "pinned_comment_and_optional_end_card",
+    "canon_impact": "none"
+  },
+  "continuity": {
+    "arc": "IV · सच और जवाबदेही",
+    "episode_summary_hi": "मीरा ने आठ बचाए गए लोगों की पहचान सार्वजनिक करने से इंकार किया। किसी की आज की जिंदगी को सनसनीखेज वीडियो के लिए जोखिम में डालना सही नहीं था। आर्या और तारा ने अपने बयान स्व…",
+    "canon_status": "planned",
+    "character_id_refs": []
+  },
+  "production": {
+    "script_status": "draft",
+    "voice_status": "not_generated",
+    "image_status": "not_generated",
+    "render_status": "not_generated",
+    "final_video_path": "outputs/ep-053.mp4"
+  }
+}
