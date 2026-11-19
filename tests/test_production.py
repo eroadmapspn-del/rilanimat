@@ -142,7 +142,9 @@ def test_episode_import_keeps_narration_and_splits_glued_dashes(tmp_path):
                      {"scene_id": "S2", "visual_prompt_hi": "लिफ़ाफ़ा", "animation": "parallax_left", "voiceover_text": text2}],
           "audience_engagement": {"question_hi": "कौन?"}, "continuity": {"arc": "I"}, "production": {"script_status": "draft"}}
     (ep_dir / "episode.json").write_text(json.dumps(ep, ensure_ascii=False), encoding="utf-8")
-    out = import_episode(tmp_path / "season", 1, tmp_path / "ep1")
+    with_cta = story_file.load(import_episode(tmp_path / "season", 1, tmp_path / "ep0"))  # default: ends by asking to follow
+    assert len(with_cta["scenes"]) == 3 and "फॉलो" in with_cta["scenes"][-1]["text"] and story_file.problems(with_cta) == []
+    out = import_episode(tmp_path / "season", 1, tmp_path / "ep1", with_cta=False)
     story = story_file.load(out)
     assert [s["visual"]["camera"] for s in story["scenes"]] == ["push-in", "pan-left"]
     assert "आवाज़— हमें" in story["scenes"][1]["text"] and story_file.problems(story) == []
@@ -188,3 +190,31 @@ def test_hindi_shot_descriptions_become_the_right_pieces():
     c = artmap.spec_for("खिड़की से निकलते दो साये। शैली")
     assert c["props"][0]["id"] == "window-shadows"
     assert artmap.spec_for("कुछ और। शैली")["props"], "every shot gets something to show"
+
+
+def test_shots_polls_and_reveal(tmp_path):
+    from reelstudio.production import artmap
+    from reelstudio.production.importer import _split_shots, import_episode, poll_line
+
+    long = "मीरा ने घड़ी देखी। कबीर ने रिकॉर्डर चलाया। चौकीदार ने कहा कि द्वार बंद है। फिर किसी ने दरवाज़ा खटखटाया। सब चुप हो गए।"
+    shots = _split_shots(long, max_words=8)
+    assert len(shots) > 1 and " ".join(shots) == long  # cut at sentence ends, nothing lost
+    base = artmap.spec_for("घड़ी का क्लोज़अप", long)
+    spec = artmap.shot_for(base, "चौकीदार ने कहा कि द्वार बंद है।", 1)
+    assert [c["id"] for c in spec["characters"]] == ["CHOWKIDAR"] and spec["view"] == "close"
+
+    polls = tmp_path / "polls.json"
+    poll = {"ask": "कहाँ?", "a": "कमरे में", "b": "सुरंग में", "answer": "b", "reveal": "सही जवाब बी।"}
+    polls.write_text(json.dumps({"1": poll}, ensure_ascii=False), encoding="utf-8")
+    ep_dir = tmp_path / "season" / "episodes"
+    for n in (1, 2):
+        (ep_dir / f"ep-{n:03d}").mkdir(parents=True)
+        t = "घंटी बजी। मीरा ने सुना।"
+        ep = {"episode_id": f"EP-{n:03d}", "title_hi": "शीर्षक", "narration_hi": t, "voiceover": {},
+              "scenes": [{"scene_id": "S1", "visual_prompt_hi": "घड़ी", "animation": "static", "voiceover_text": t}],
+              "audience_engagement": {"question_hi": "कौन?"}, "continuity": {"arc": "I"}, "production": {"script_status": "draft"}}
+        (ep_dir / f"ep-{n:03d}" / "episode.json").write_text(json.dumps(ep, ensure_ascii=False), encoding="utf-8")
+    one = story_file.load(import_episode(tmp_path / "season", 1, tmp_path / "e1", polls=polls))
+    assert one["scenes"][-1]["text"] == poll_line(poll) and "ए)" in (tmp_path / "e1" / "pinned_comment.txt").read_text(encoding="utf-8")
+    two = story_file.load(import_episode(tmp_path / "season", 2, tmp_path / "e2", polls=polls))
+    assert two["scenes"][0]["text"] == "सही जवाब बी।" and story_file.problems(two) == []  # the answer opens the next episode

@@ -36,8 +36,9 @@ const Table: React.FC<{ glowX: number }> = ({ glowX }) => (
 /** Composes a location, props and characters into one 1080x1920 illustrated frame. */
 export const Art: React.FC<{ spec: ArtSpec }> = ({ spec }) => {
   const Location = LOCATIONS[spec.location] ?? LOCATIONS.generic;
-  const chars = (spec.characters ?? []).slice(0, 3);
-  const layout = CHAR_LAYOUT[Math.max(1, chars.length)];
+  const close = spec.view === "close";
+  const chars = (spec.characters ?? []).slice(0, close ? 1 : 3);
+  const layout = close ? [{ x: 540, scale: 2.5 }] : CHAR_LAYOUT[Math.max(1, chars.length)];
   const props = (spec.props ?? []).filter((p) => PROPS[p.id]);
   const photo = spec.look === "photo";
   const wall = props.filter((p) => WALL.has(p.id));
@@ -57,6 +58,7 @@ export const Art: React.FC<{ spec: ArtSpec }> = ({ spec }) => {
     <AbsoluteFill style={{ background: C.ink }}>
       <svg viewBox="0 0 1080 1920" width="100%" height="100%" style={{ filter: photo ? "sepia(0.9) contrast(1.1) brightness(0.9)" : undefined }}>
         <Defs />
+        <g transform={close && chars.length === 0 ? "translate(540 960) scale(1.3) translate(-540 -960)" : undefined}>
         <Location />
 
         {/* wall props: the hero is centred and large, a second one sits to the side */}
@@ -87,9 +89,10 @@ export const Art: React.FC<{ spec: ArtSpec }> = ({ spec }) => {
         })}
 
         {chars.map((c, i) => (
-          <Character key={c.id + i} id={c.id} x={c.x ?? layout[i].x} y={c.y ?? 1880} scale={c.scale ?? layout[i].scale} flip={c.flip ?? i === 1} shadow={c.shadow} face={c.face} />
+          <Character key={c.id + i} id={c.id} mood={c.mood} x={c.x ?? layout[i].x} y={c.y ?? (close ? 2330 : 1880)} scale={c.scale ?? layout[i].scale} flip={c.flip ?? i === 1} shadow={c.shadow} face={c.face} />
         ))}
 
+        </g>
         {useTable && <Glow x={540} y={420} r={600} flicker={false} />}
         <Fog opacity={spec.fog ?? 0.35} />
         {spec.rain && <Rain />}

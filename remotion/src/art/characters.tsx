@@ -6,7 +6,8 @@ import { C } from "./palette";
  * so they look identical in every episode. Figures are drawn as bust portraits with the origin at the bottom centre
  * (head centre at y = -640). Faces are minimal on purpose: a few features, half in shadow.
  */
-export type CharacterId = "MEERA" | "KABIR" | "RAHIM" | "TARA" | "NANDINI" | "VIKRAM" | "VINAY" | "DEEPA" | "ARJUN";
+export type CharacterId = "MEERA" | "KABIR" | "RAHIM" | "TARA" | "NANDINI" | "VIKRAM" | "VINAY" | "DEEPA" | "ARJUN" | "CHILD" | "CHOWKIDAR" | "OFFICER" | "NURSE";
+export type Mood = "calm" | "worried" | "shock" | "sad" | "stern";
 
 type Look = {
   skin: string;
@@ -14,8 +15,10 @@ type Look = {
   outfit: string;
   trim?: string;
   hairStyle: "long" | "short" | "bun" | "plait" | "balding";
-  extras: Array<"beard" | "stubble" | "mustache" | "glasses" | "headphones" | "hood" | "strap" | "lanyard" | "pallu" | "collar" | "badge" | "camera">;
+  extras: Array<"beard" | "stubble" | "mustache" | "glasses" | "headphones" | "hood" | "strap" | "lanyard" | "pallu" | "collar" | "badge" | "camera" | "cap" | "whitecoat">;
   age: number;
+  /** body size relative to an adult; children are drawn smaller */
+  size?: number;
 };
 
 export const LOOKS: Record<CharacterId, Look> = {
@@ -28,6 +31,26 @@ export const LOOKS: Record<CharacterId, Look> = {
   VINAY: { skin: "#a57652", hair: "#1c1a1a", outfit: "#6b6a55", hairStyle: "short", extras: ["stubble"], age: 40 },
   DEEPA: { skin: "#b3805a", hair: "#120f0f", outfit: "#7a3b4a", hairStyle: "plait", extras: ["badge"], age: 35 },
   ARJUN: { skin: "#a97a55", hair: "#16130f", outfit: "#4a4a40", hairStyle: "short", extras: ["mustache", "camera", "badge"], age: 35 },
+  // supporting cast: people the narration mentions by role, kept consistent too
+  CHILD: { skin: "#b78a63", hair: "#0d0b0b", outfit: "#a8553e", hairStyle: "plait", extras: [], age: 9, size: 0.72 },
+  CHOWKIDAR: { skin: "#9c6e4c", hair: "#2a2724", outfit: "#6f6a52", hairStyle: "short", extras: ["cap", "mustache", "badge"], age: 58 },
+  OFFICER: { skin: "#a97c59", hair: "#2a2a2c", outfit: "#3a4252", trim: "#e9e6df", hairStyle: "short", extras: ["collar", "badge"], age: 45 },
+  NURSE: { skin: "#b07f5b", hair: "#120f0f", outfit: "#d9dede", hairStyle: "bun", extras: ["whitecoat"], age: 32 },
+};
+
+const BROWS: Record<Mood, string> = {
+  calm: "M-62 -678 Q-42 -690 -22 -680 M24 -680 Q44 -690 64 -678",
+  worried: "M-62 -668 Q-42 -690 -20 -692 M22 -692 Q44 -690 64 -668",
+  shock: "M-62 -690 Q-42 -706 -22 -694 M24 -694 Q44 -706 64 -690",
+  sad: "M-62 -676 Q-40 -682 -20 -694 M20 -694 Q40 -682 62 -676",
+  stern: "M-62 -690 Q-40 -680 -18 -672 M18 -672 Q40 -680 62 -690",
+};
+const MOUTHS: Record<Mood, string> = {
+  calm: "M-26 -572 Q0 -566 26 -572",
+  worried: "M-24 -566 Q0 -578 24 -566",
+  shock: "M-14 -576 Q0 -556 14 -576 Q0 -590 -14 -576 Z",
+  sad: "M-26 -562 Q0 -580 26 -562",
+  stern: "M-28 -570 L28 -570",
 };
 
 const HEAD = { cx: 0, cy: -640, rx: 105, ry: 130 };
@@ -77,8 +100,10 @@ export const Character: React.FC<{
   shadow?: number;
   /** show a face, or only hair and shoulders (keeps identity, hides detail) */
   face?: boolean;
-}> = ({ id, x = 540, y = 1850, scale = 1.3, flip = false, shadow = 0.2, face = true }) => {
+  mood?: Mood;
+}> = ({ id, x = 540, y = 1850, scale: baseScale = 1.3, flip = false, shadow = 0.2, face = true, mood = "calm" }) => {
   const look = LOOKS[id];
+  const scale = baseScale * (look.size ?? 1);
   const clip = "head" + useId().replace(/[^a-zA-Z0-9]/g, "");
   const has = (e: Look["extras"][number]) => look.extras.includes(e);
   return (
@@ -127,10 +152,11 @@ export const Character: React.FC<{
       {has("mustache") && <path d="M-46 -585 Q0 -610 46 -585 Q0 -595 -46 -585 Z" fill={look.hair} />}
       {face && (
         <g>
-          <ellipse cx={-42} cy={-650} rx={14} ry={7} fill={C.ink} opacity={0.9} />
-          <ellipse cx={44} cy={-650} rx={14} ry={7} fill={C.ink} opacity={0.7} />
-          <path d="M-62 -678 Q-42 -690 -22 -680 M24 -680 Q44 -690 64 -678" stroke={look.hair === "#e8e6e0" ? "#cfcfc8" : C.ink} strokeWidth={6} fill="none" strokeLinecap="round" />
+          <ellipse cx={-42} cy={-650} rx={14} ry={mood === "shock" ? 12 : 7} fill={C.ink} opacity={0.9} />
+          <ellipse cx={44} cy={-650} rx={14} ry={mood === "shock" ? 12 : 7} fill={C.ink} opacity={0.7} />
+          <path d={BROWS[mood]} stroke={look.hair === "#e8e6e0" ? "#cfcfc8" : C.ink} strokeWidth={6} fill="none" strokeLinecap="round" />
           <path d="M-4 -640 Q-12 -600 4 -596" stroke={C.ink} strokeWidth={4} fill="none" opacity={0.35} />
+          <path d={MOUTHS[mood]} stroke={C.ink} strokeWidth={5} fill={mood === "shock" ? C.ink : "none"} strokeLinecap="round" opacity={0.7} />
         </g>
       )}
       {has("glasses") && (
@@ -141,6 +167,8 @@ export const Character: React.FC<{
         </g>
       )}
       <Hair look={look} />
+      {has("cap") && <path d="M-122 -690 Q-110 -810 0 -815 Q110 -810 122 -690 L150 -682 L-150 -682 Z" fill={look.outfit} stroke={C.ink} strokeWidth={3} />}
+      {has("whitecoat") && <path d="M-60 -445 L-40 -120 L40 -120 L60 -445 L0 -330 Z" fill="#f1f1ec" opacity={0.9} />}
       {has("headphones") && (
         <g>
           <path d="M-118 -650 Q-125 -810 0 -815 Q125 -810 118 -650" stroke="#101216" strokeWidth={16} fill="none" />

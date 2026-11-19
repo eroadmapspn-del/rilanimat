@@ -10,14 +10,19 @@ from __future__ import annotations
 
 import unicodedata
 
-CHARACTERS = ["MEERA", "KABIR", "RAHIM", "TARA", "NANDINI", "VIKRAM", "VINAY", "DEEPA", "ARJUN"]
+CHARACTERS = ["MEERA", "KABIR", "RAHIM", "TARA", "NANDINI", "VIKRAM", "VINAY", "DEEPA", "ARJUN", "CHILD", "CHOWKIDAR", "OFFICER", "NURSE"]
+MOODS = ["calm", "worried", "shock", "sad", "stern"]
 LOCATIONS = ["clock-tower", "archive", "school", "tunnel", "clock-shop", "pump-station", "reservoir", "hospital",
              "radio-station", "platform", "siren-tower", "resort", "godown", "generic"]
 PROPS = ["clock", "clock-ringing", "envelope", "recorder", "child-shadow", "files", "register", "photo", "map", "tape", "waveform",
          "lantern", "idcards", "gear", "siren", "window-shadows", "water", "headline", "diary", "screen", "phone"]
 
 _PEOPLE = {"MEERA": ["मीरा"], "KABIR": ["कबीर"], "RAHIM": ["रहीम"], "TARA": ["तारा", "तारिका"], "NANDINI": ["नंदिनी"],
-           "VIKRAM": ["विक्रम"], "VINAY": ["विनय"], "DEEPA": ["दीपा"], "ARJUN": ["अर्जुन"]}
+           "VIKRAM": ["विक्रम"], "VINAY": ["विनय"], "DEEPA": ["दीपा"], "ARJUN": ["अर्जुन"],
+           "CHILD": ["बच्ची", "बच्चा", "लड़की"], "CHOWKIDAR": ["चौकीदार", "गार्ड"], "OFFICER": ["अधिकारी", "नगराध्यक्ष"],
+           "NURSE": ["नर्स"]}
+_MOOD_WORDS = [("shock", ["चौंक", "हैरान", "स्तब्ध", "अचानक"]), ("worried", ["डर", "घबरा", "बेचैन", "चिंता", "काँप"]),
+               ("sad", ["रो ", "उदास", "आँसू", "मरा हुआ"]), ("stern", ["गुस्स", "चेतावनी", "आदेश", "रोक", "मना"])]
 
 # checked in this order; the first match wins
 _PLACES = [
@@ -76,4 +81,33 @@ def spec_for(prompt: str, voiceover: str = "") -> dict:
                 c.update({"face": False, "shadow": 0.8})
     if any(_plain(w) in subject for w in _RAIN_WORDS):
         spec["rain"] = True
+    return spec
+
+
+def shot_for(base: dict, chunk: str, index: int) -> dict:
+    """A variation of a scene's `base` art for one sentence group (`chunk`) of its narration.
+
+    People named in the chunk (by name or role) take the shot; a place word changes the location; objects named in the chunk
+    replace the scene's props. Shots alternate wide and close so a long scene does not sit on one picture.
+    """
+    text = _plain(chunk)
+    spec = {**base, "props": [dict(p) for p in base.get("props", [])]}
+    spec.pop("characters", None)
+    people = sorted((_first_pos(text, names), cid) for cid, names in _PEOPLE.items() if _first_pos(text, names) is not None)
+    if people:
+        spec["characters"] = [{"id": cid} for _, cid in people][:3]
+        mood = next((m for m, words in _MOOD_WORDS if any(_plain(w) in text for w in words)), "calm")
+        if mood != "calm":
+            spec["characters"][0]["mood"] = mood
+    place = next((p for p, words in _PLACES if _first_pos(text, words) is not None), None)
+    if place:
+        spec["location"] = place
+    generic = {"register", "files", "headline", "screen", "water"}
+    found = sorted((pid in generic, _first_pos(text, words), pid) for pid, words in _PROPWORDS if _first_pos(text, words) is not None)
+    props = [pid for _, _, pid in found if pid != place][: 2 if people else 3]
+    if props:
+        spec["props"] = [{"id": p} for p in props]
+    spec["view"] = "close" if index % 2 else "wide"
+    if len(spec.get("characters", [])) > 1 and spec["view"] == "close":
+        spec["view"] = "wide"  # a close-up shows one face; keep group shots wide
     return spec

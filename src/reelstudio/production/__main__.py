@@ -45,7 +45,9 @@ def cmd_new(a) -> None:
 def cmd_import_episode(a) -> None:
     from .importer import import_episode
 
-    out = import_episode(Path(a.season), a.number, Path(a.out or f"productions/ep-{a.number:03d}"))
+    out = import_episode(Path(a.season), a.number, Path(a.out or f"productions/ep-{a.number:03d}"),
+                         cta=a.cta, with_cta=not a.no_cta,
+                         shots=not a.no_shots, polls=Path(a.polls) if a.polls else None)
     print(f"Imported episode {a.number} into {out}. The season files were not changed. Next: voice, then images.")
 
 
@@ -174,6 +176,10 @@ def main(argv: list[str] | None = None) -> None:
     imp.add_argument("season", help="the season folder (contains episodes/ep-NNN/episode.json)")
     imp.add_argument("number", type=int)
     imp.add_argument("--out", help="default productions/ep-NNN")
+    imp.add_argument("--cta", help="closing line asking viewers to follow (default: a rotating Hindi line)")
+    imp.add_argument("--no-cta", action="store_true")
+    imp.add_argument("--no-shots", action="store_true", help="one picture per season scene, not per sentence group")
+    imp.add_argument("--polls", help="poll file (default polls/terahvi.json)")
     imp.set_defaults(fn=cmd_import_episode)
     for stream in (sys.stdout, sys.stderr):  # Hindi text must not crash a legacy Windows console
         stream.reconfigure(encoding="utf-8", errors="replace")
