@@ -1,5 +1,5 @@
 import React from "react";
-import { AbsoluteFill } from "remotion";
+import { AbsoluteFill, Easing, interpolate, useCurrentFrame, useVideoConfig } from "remotion";
 import { Character } from "./characters";
 import { Defs, Dust, Fog, Glow, Rain } from "./fx";
 import { LOCATIONS } from "./locations";
@@ -14,7 +14,7 @@ const CHAR_LAYOUT: Record<number, Array<{ x: number; scale: number }>> = {
 };
 
 /** Props that hang on or stand against the wall. Everything else sits on a table. */
-const WALL = new Set(["child-shadow", "window-shadows", "siren", "clock", "clock-ringing", "gear", "water"]);
+const WALL = new Set(["calendar", "child-shadow", "window-shadows", "siren", "clock", "clock-ringing", "gear", "water"]);
 const TABLE_TOP = 1200;
 
 const Table: React.FC<{ glowX: number }> = ({ glowX }) => (
@@ -35,6 +35,8 @@ const Table: React.FC<{ glowX: number }> = ({ glowX }) => (
 
 /** Composes a location, props and characters into one 1080x1920 illustrated frame. */
 export const Art: React.FC<{ spec: ArtSpec }> = ({ spec }) => {
+  const frame = useCurrentFrame();
+  const { fps, durationInFrames } = useVideoConfig();
   const Location = LOCATIONS[spec.location] ?? LOCATIONS.generic;
   const close = spec.view === "close";
   const chars = (spec.characters ?? []).slice(0, close ? 1 : 3);
@@ -88,9 +90,15 @@ export const Art: React.FC<{ spec: ArtSpec }> = ({ spec }) => {
           return place(p, 540, 560 + i * 20, 0.95, i);
         })}
 
-        {chars.map((c, i) => (
-          <Character key={c.id + i} id={c.id} mood={c.mood} x={c.x ?? layout[i].x} y={c.y ?? (close ? 2330 : 1880)} scale={c.scale ?? layout[i].scale} flip={c.flip ?? i === 1} shadow={c.shadow} face={c.face} />
-        ))}
+        {chars.map((c, i) => {
+          const baseX = c.x ?? layout[i].x;
+          let x = baseX;
+          if (c.fromX !== undefined || c.toX !== undefined) {
+            const a = Math.round((c.delay ?? 0) * fps);
+            x = interpolate(frame, [a, Math.max(a + 1, durationInFrames - 1)], [c.fromX ?? baseX, c.toX ?? baseX], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.inOut(Easing.sin) });
+          }
+          return <Character key={c.id + i} id={c.id} mood={c.mood} action={c.action} x={x} y={c.y ?? (close ? 2330 : 1880)} scale={c.scale ?? layout[i].scale} flip={c.flip ?? i === 1} shadow={c.shadow} face={c.face} />;
+        })}
 
         </g>
         {useTable && <Glow x={540} y={420} r={600} flicker={false} />}

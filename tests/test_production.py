@@ -175,7 +175,7 @@ def test_art_ids_match_the_react_library():
 
     art = Path(__file__).resolve().parents[1] / "remotion" / "src" / "art"
     for ids, filename in ((artmap.LOCATIONS, "locations.tsx"), (artmap.PROPS, "props.tsx"), (artmap.CHARACTERS, "characters.tsx")):
-        source = (art / filename).read_text(encoding="utf-8")
+        source = (art / filename).read_text(encoding="utf-8") + (art / "city.tsx").read_text(encoding="utf-8")
         for item in ids:
             assert f'"{item}"' in source or f"{item}:" in source, f"{item} is in artmap.py but not in {filename}"
 

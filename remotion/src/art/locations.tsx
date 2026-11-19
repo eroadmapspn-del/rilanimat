@@ -1,6 +1,7 @@
 import React from "react";
 import { C, rand } from "./palette";
 import { Beam, Glow } from "./fx";
+import { CITY_LOCATIONS } from "./city";
 
 /** Backdrops for the 13 places in CONTINUITY_BIBLE.json. Each fills the 1080x1920 canvas. */
 const Sky: React.FC = () => <rect width={1080} height={1920} fill="url(#skyGrad)" />;
@@ -167,6 +168,6 @@ export const Generic: React.FC = () => (
 export const LOCATIONS: Record<string, React.FC> = {
   "clock-tower": ClockTower, archive: Archive, school: School, tunnel: Tunnel, "clock-shop": ClockShop, "pump-station": PumpStation,
   reservoir: Reservoir, hospital: Hospital, "radio-station": RadioStation, platform: Platform, "siren-tower": Siren, resort: Resort,
-  godown: Godown, generic: Generic,
+  godown: Godown, generic: Generic, ...CITY_LOCATIONS,
 };
 export const LOCATION_IDS = Object.keys(LOCATIONS);

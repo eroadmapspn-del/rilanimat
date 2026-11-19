@@ -2,6 +2,7 @@ import React from "react";
 import { useCurrentFrame } from "remotion";
 import { C } from "./palette";
 import { Glow } from "./fx";
+import { CITY_PROPS } from "./city";
 
 /** Props are centred on (0,0), about 400 units wide. Art.tsx positions and scales them. */
 type P = { glow?: boolean };
@@ -254,6 +255,6 @@ export const PROPS: Record<string, React.FC<P>> = {
   clock: Clock, "clock-ringing": (p) => <Clock {...p} glow />, envelope: Envelope, recorder: Recorder, "child-shadow": ChildShadow,
   files: Files, register: Register, photo: Photo, map: MapSheet, tape: TapeMachine, waveform: Waveform, lantern: Lantern,
   idcards: IdCards, gear: Gear, siren: SirenTower, "window-shadows": WindowShadows, water: Water, headline: Headline,
-  diary: Diary, screen: Screen, phone: Phone,
+  diary: Diary, screen: Screen, phone: Phone, ...CITY_PROPS,
 };
 export const PROP_IDS = Object.keys(PROPS);
