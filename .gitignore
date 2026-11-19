@@ -6,7 +6,7 @@ __pycache__/
 .pytest_cache/
 .ruff_cache/
 
-productions/*/build/
+productions/
 
 # generated or private material: never push
 *.zip
