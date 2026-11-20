@@ -1,0 +1,716 @@
+{
+  "meta": {
+    "title": "The Keeper and the Whisper",
+    "topic": "A lighthouse keeper who hears the sea say his name",
+    "language": "English",
+    "factuality": "fiction",
+    "hook": "Every night, the sea whispered his name.",
+    "note": "Example production. Original fictional story. Images are labelled placeholders."
+  },
+  "scenes": [
+    {
+      "text": "Every night for thirty years, the sea whispered his name.",
+      "transition": "fade",
+      "visual": {
+        "prompt": "Lone lighthouse on black rocks at night, moonlit swell, cold blue, wide shot",
+        "file": "images/placeholder_scene01.png",
+        "source": "placeholder",
+        "camera": "push-in",
+        "atmosphere": {
+          "tint": "#0b1d33",
+          "dim": 0.35
+        },
+        "kind": "image"
+      }
+    },
+    {
+      "text": "Thomas kept the lighthouse alone, and he never once answered.",
+      "transition": "slide-left",
+      "visual": {
+        "prompt": "Weathered keeper at a rain-streaked window, lamp glow on his face, close-up",
+        "file": "images/placeholder_scene02.png",
+        "source": "placeholder",
+        "camera": "pan-right",
+        "atmosphere": {
+          "tint": "#1b2a3a",
+          "dim": 0.3
+        },
+        "kind": "image"
+      }
+    },
+    {
+      "text": "The voice was gentle. Thomas, it said. Come down.",
+      "transition": "fade",
+      "visual": {
+        "prompt": "Dark water at the foot of the stairs, a faint pale glow under the surface",
+        "file": "images/placeholder_scene03.png",
+        "source": "placeholder",
+        "camera": "tilt-down",
+        "atmosphere": {
+          "tint": "#0a2a2f",
+          "dim": 0.35
+        },
+        "kind": "image"
+      }
+    },
+    {
+      "text": "Then a storm came, and a fishing boat vanished from the dark.",
+      "transition": "zoom",
+      "visual": {
+        "prompt": "Storm waves breaking over the rocks, lightning, tiny boat lights disappearing",
+        "file": "images/placeholder_scene04.png",
+        "source": "placeholder",
+        "camera": "pull-out",
+        "atmosphere": {
+          "tint": "#1a1a2e",
+          "dim": 0.4
+        },
+        "kind": "image"
+      }
+    },
+    {
+      "text": "The sea went silent. For the first time, Thomas spoke. Where are they?",
+      "transition": "fade",
+      "visual": {
+        "prompt": "Keeper on the gallery rail in the storm, hands on the iron, desperate",
+        "file": "images/placeholder_scene05.png",
+        "source": "placeholder",
+        "camera": "drift",
+        "atmosphere": {
+          "tint": "#201a2b",
+          "dim": 0.35
+        },
+        "kind": "image"
+      }
+    },
+    {
+      "text": "The water answered. A ribbon of pale green light unrolled across the waves.",
+      "transition": "fade",
+      "visual": {
+        "prompt": "A glowing green path across black ocean, seen from the lighthouse height",
+        "file": "images/placeholder_scene06.png",
+        "source": "placeholder",
+        "camera": "push-in",
+        "atmosphere": {
+          "tint": "#0b3a2e",
+          "dim": 0.25
+        },
+        "kind": "image"
+      }
+    },
+    {
+      "text": "He swung the great lamp along that path, until a small boat turned toward home.",
+      "transition": "slide-up",
+      "visual": {
+        "prompt": "Lighthouse beam cutting through storm along the glowing path, boat turning",
+        "file": "images/placeholder_scene07.png",
+        "source": "placeholder",
+        "camera": "pan-left",
+        "atmosphere": {
+          "tint": "#16324f",
+          "dim": 0.25
+        },
+        "kind": "image"
+      }
+    },
+    {
+      "text": "At dawn the fishermen rowed in, alive. Thomas looked at the sea and said thank you.",
+      "transition": "fade",
+      "visual": {
+        "prompt": "Calm dawn, golden light on still water, small boat reaching the dock, keeper smiling",
+        "file": "images/placeholder_scene08.png",
+        "source": "placeholder",
+        "camera": "pull-out",
+        "atmosphere": {
+          "tint": "#4a3a22",
+          "dim": 0.2
+        },
+        "kind": "image"
+      }
+    },
+    {
+      "text": "It never whispered again. It had only ever wanted someone to answer.",
+      "transition": "fade",
+      "visual": {
+        "prompt": "Empty calm sea at sunrise, keeper small on the rocks, wide and peaceful",
+        "file": "images/placeholder_scene09.png",
+        "source": "placeholder",
+        "camera": "push-in",
+        "atmosphere": {
+          "tint": "#33405a",
+          "dim": 0.2
+        },
+        "kind": "image"
+      }
+    }
+  ],
+  "music": {
+    "file": "audio/ambient.mp3",
+    "volume": 0.2,
+    "duckTo": 0.07,
+    "source": "synthesized locally with ffmpeg",
+    "license": "Generated on this machine from sine waves. No third-party rights."
+  },
+  "sfx": [],
+  "captions": true,
+  "voice": {
+    "provider": "sapi",
+    "voiceName": "Microsoft Zira Desktop",
+    "duration": 51.94,
+    "timing": "measured",
+    "words": [
+      {
+        "w": "Every",
+        "start": 0.0,
+        "end": 0.353
+      },
+      {
+        "w": "night",
+        "start": 0.353,
+        "end": 0.7
+      },
+      {
+        "w": "for",
+        "start": 0.7,
+        "end": 0.861
+      },
+      {
+        "w": "thirty",
+        "start": 0.861,
+        "end": 1.274
+      },
+      {
+        "w": "years,",
+        "start": 1.274,
+        "end": 1.665
+      },
+      {
+        "w": "the",
+        "start": 2.117,
+        "end": 2.202
+      },
+      {
+        "w": "sea",
+        "start": 2.202,
+        "end": 2.526
+      },
+      {
+        "w": "whispered",
+        "start": 2.526,
+        "end": 3.032
+      },
+      {
+        "w": "his",
+        "start": 3.032,
+        "end": 3.231
+      },
+      {
+        "w": "name.",
+        "start": 3.231,
+        "end": 3.54
+      },
+      {
+        "w": "Thomas",
+        "start": 4.483,
+        "end": 4.936
+      },
+      {
+        "w": "kept",
+        "start": 4.936,
+        "end": 5.275
+      },
+      {
+        "w": "the",
+        "start": 5.275,
+        "end": 5.404
+      },
+      {
+        "w": "lighthouse",
+        "start": 5.404,
+        "end": 5.976
+      },
+      {
+        "w": "alone,",
+        "start": 5.976,
+        "end": 6.328
+      },
+      {
+        "w": "and",
+        "start": 6.779,
+        "end": 6.895
+      },
+      {
+        "w": "he",
+        "start": 6.895,
+        "end": 7.071
+      },
+      {
+        "w": "never",
+        "start": 7.071,
+        "end": 7.404
+      },
+      {
+        "w": "once",
+        "start": 7.404,
+        "end": 7.717
+      },
+      {
+        "w": "answered.",
+        "start": 7.717,
+        "end": 8.211
+      },
+      {
+        "w": "The",
+        "start": 9.189,
+        "end": 9.277
+      },
+      {
+        "w": "voice",
+        "start": 9.277,
+        "end": 9.681
+      },
+      {
+        "w": "was",
+        "start": 9.681,
+        "end": 9.902
+      },
+      {
+        "w": "gentle.",
+        "start": 9.902,
+        "end": 10.324
+      },
+      {
+        "w": "Thomas,",
+        "start": 11.277,
+        "end": 11.852
+      },
+      {
+        "w": "it",
+        "start": 12.304,
+        "end": 12.472
+      },
+      {
+        "w": "said.",
+        "start": 12.472,
+        "end": 12.84
+      },
+      {
+        "w": "Come",
+        "start": 13.813,
+        "end": 14.132
+      },
+      {
+        "w": "down.",
+        "start": 14.132,
+        "end": 14.48
+      },
+      {
+        "w": "Then",
+        "start": 15.453,
+        "end": 15.657
+      },
+      {
+        "w": "a",
+        "start": 15.657,
+        "end": 15.727
+      },
+      {
+        "w": "storm",
+        "start": 15.727,
+        "end": 16.216
+      },
+      {
+        "w": "came,",
+        "start": 16.216,
+        "end": 16.534
+      },
+      {
+        "w": "and",
+        "start": 16.989,
+        "end": 17.113
+      },
+      {
+        "w": "a",
+        "start": 17.113,
+        "end": 17.173
+      },
+      {
+        "w": "fishing",
+        "start": 17.173,
+        "end": 17.658
+      },
+      {
+        "w": "boat",
+        "start": 17.658,
+        "end": 17.96
+      },
+      {
+        "w": "vanished",
+        "start": 17.96,
+        "end": 18.467
+      },
+      {
+        "w": "from",
+        "start": 18.467,
+        "end": 18.709
+      },
+      {
+        "w": "the",
+        "start": 18.709,
+        "end": 18.812
+      },
+      {
+        "w": "dark.",
+        "start": 18.812,
+        "end": 19.106
+      },
+      {
+        "w": "The",
+        "start": 20.082,
+        "end": 20.178
+      },
+      {
+        "w": "sea",
+        "start": 20.178,
+        "end": 20.516
+      },
+      {
+        "w": "went",
+        "start": 20.516,
+        "end": 20.813
+      },
+      {
+        "w": "silent.",
+        "start": 20.813,
+        "end": 21.266
+      },
+      {
+        "w": "For",
+        "start": 22.25,
+        "end": 22.529
+      },
+      {
+        "w": "the",
+        "start": 22.529,
+        "end": 22.621
+      },
+      {
+        "w": "first",
+        "start": 22.621,
+        "end": 23.096
+      },
+      {
+        "w": "time,",
+        "start": 23.096,
+        "end": 23.411
+      },
+      {
+        "w": "Thomas",
+        "start": 23.867,
+        "end": 24.38
+      },
+      {
+        "w": "spoke.",
+        "start": 24.38,
+        "end": 24.779
+      },
+      {
+        "w": "Where",
+        "start": 25.749,
+        "end": 25.991
+      },
+      {
+        "w": "are",
+        "start": 25.991,
+        "end": 26.114
+      },
+      {
+        "w": "they?",
+        "start": 26.114,
+        "end": 26.382
+      },
+      {
+        "w": "The",
+        "start": 27.342,
+        "end": 27.455
+      },
+      {
+        "w": "water",
+        "start": 27.455,
+        "end": 27.81
+      },
+      {
+        "w": "answered.",
+        "start": 27.81,
+        "end": 28.293
+      },
+      {
+        "w": "A",
+        "start": 29.257,
+        "end": 29.413
+      },
+      {
+        "w": "ribbon",
+        "start": 29.413,
+        "end": 29.801
+      },
+      {
+        "w": "of",
+        "start": 29.801,
+        "end": 29.93
+      },
+      {
+        "w": "pale",
+        "start": 29.93,
+        "end": 30.297
+      },
+      {
+        "w": "green",
+        "start": 30.297,
+        "end": 30.675
+      },
+      {
+        "w": "light",
+        "start": 30.675,
+        "end": 30.992
+      },
+      {
+        "w": "unrolled",
+        "start": 30.992,
+        "end": 31.516
+      },
+      {
+        "w": "across",
+        "start": 31.516,
+        "end": 32.012
+      },
+      {
+        "w": "the",
+        "start": 32.012,
+        "end": 32.13
+      },
+      {
+        "w": "waves.",
+        "start": 32.13,
+        "end": 32.483
+      },
+      {
+        "w": "He",
+        "start": 33.447,
+        "end": 33.608
+      },
+      {
+        "w": "swung",
+        "start": 33.608,
+        "end": 34.031
+      },
+      {
+        "w": "the",
+        "start": 34.031,
+        "end": 34.133
+      },
+      {
+        "w": "great",
+        "start": 34.133,
+        "end": 34.496
+      },
+      {
+        "w": "lamp",
+        "start": 34.496,
+        "end": 34.785
+      },
+      {
+        "w": "along",
+        "start": 34.785,
+        "end": 35.182
+      },
+      {
+        "w": "that",
+        "start": 35.182,
+        "end": 35.423
+      },
+      {
+        "w": "path,",
+        "start": 35.423,
+        "end": 35.714
+      },
+      {
+        "w": "until",
+        "start": 36.191,
+        "end": 36.579
+      },
+      {
+        "w": "a",
+        "start": 36.579,
+        "end": 36.645
+      },
+      {
+        "w": "small",
+        "start": 36.645,
+        "end": 37.109
+      },
+      {
+        "w": "boat",
+        "start": 37.109,
+        "end": 37.432
+      },
+      {
+        "w": "turned",
+        "start": 37.432,
+        "end": 37.809
+      },
+      {
+        "w": "toward",
+        "start": 37.809,
+        "end": 38.148
+      },
+      {
+        "w": "home.",
+        "start": 38.148,
+        "end": 38.445
+      },
+      {
+        "w": "At",
+        "start": 39.391,
+        "end": 39.559
+      },
+      {
+        "w": "dawn",
+        "start": 39.559,
+        "end": 39.878
+      },
+      {
+        "w": "the",
+        "start": 39.878,
+        "end": 39.954
+      },
+      {
+        "w": "fishermen",
+        "start": 39.954,
+        "end": 40.57
+      },
+      {
+        "w": "rowed",
+        "start": 40.57,
+        "end": 40.856
+      },
+      {
+        "w": "in,",
+        "start": 40.856,
+        "end": 41.033
+      },
+      {
+        "w": "alive.",
+        "start": 41.478,
+        "end": 42.038
+      },
+      {
+        "w": "Thomas",
+        "start": 42.993,
+        "end": 43.478
+      },
+      {
+        "w": "looked",
+        "start": 43.478,
+        "end": 43.746
+      },
+      {
+        "w": "at",
+        "start": 43.746,
+        "end": 43.875
+      },
+      {
+        "w": "the",
+        "start": 43.875,
+        "end": 43.968
+      },
+      {
+        "w": "sea",
+        "start": 43.968,
+        "end": 44.319
+      },
+      {
+        "w": "and",
+        "start": 44.319,
+        "end": 44.479
+      },
+      {
+        "w": "said",
+        "start": 44.479,
+        "end": 44.784
+      },
+      {
+        "w": "thank",
+        "start": 44.784,
+        "end": 45.114
+      },
+      {
+        "w": "you.",
+        "start": 45.114,
+        "end": 45.339
+      },
+      {
+        "w": "It",
+        "start": 46.285,
+        "end": 46.447
+      },
+      {
+        "w": "never",
+        "start": 46.447,
+        "end": 46.803
+      },
+      {
+        "w": "whispered",
+        "start": 46.803,
+        "end": 47.286
+      },
+      {
+        "w": "again.",
+        "start": 47.286,
+        "end": 47.65
+      },
+      {
+        "w": "It",
+        "start": 48.59,
+        "end": 48.722
+      },
+      {
+        "w": "had",
+        "start": 48.722,
+        "end": 48.967
+      },
+      {
+        "w": "only",
+        "start": 48.967,
+        "end": 49.33
+      },
+      {
+        "w": "ever",
+        "start": 49.33,
+        "end": 49.633
+      },
+      {
+        "w": "wanted",
+        "start": 49.633,
+        "end": 50.069
+      },
+      {
+        "w": "someone",
+        "start": 50.069,
+        "end": 50.551
+      },
+      {
+        "w": "to",
+        "start": 50.551,
+        "end": 50.713
+      },
+      {
+        "w": "answer.",
+        "start": 50.713,
+        "end": 51.113
+      }
+    ],
+    "notes": [],
+    "file": "audio/voice.wav"
+  }
+}

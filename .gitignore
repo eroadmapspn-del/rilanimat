@@ -1,15 +1,12 @@
 .env
-projects/
 __pycache__/
 *.egg-info/
 .venv/
 .pytest_cache/
 .ruff_cache/
 
-productions/
 
 # generated or private material: never push
 *.zip
 server.log
 *.tmp
-remotion/out/

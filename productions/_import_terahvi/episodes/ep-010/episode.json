@@ -1,0 +1,75 @@
+{
+  "episode_number": 10,
+  "episode_id": "EP-010",
+  "title_hi": "पहली सार्वजनिक पहेली",
+  "target_duration_seconds": 60,
+  "narration_hi": "मीरा ने अपनी पहली छोटी वीडियो पोस्ट की। उसने बच्चों के नाम नहीं दिखाए, सिर्फ़ रुकी हुई घड़ी, पीतल का दाँत और तीन सवाल रखे: घड़ी किसने रोकी? बाढ़ का पानी कहाँ से आया? और आठ बच्चों की सूची में नौवीं जगह खाली क्यों है? कुछ ही मिनटों में हजारों टिप्पणियाँ आने लगीं। अधिकतर लोग इसे भूत की कहानी समझ रहे थे। फिर एक अकाउंट से संदेश आया—नौवाँ बच्चा कोई था ही नहीं। नौवीं जगह उस इंसान के लिए रखी गई थी जिसने बाकी आठों को बचाया। संदेश भेजने वाले का नाम था—अधूरी हाज़िरी।",
+  "narration_word_count": 94,
+  "voiceover": {
+    "language": "hi-IN",
+    "voice_id": "CONFIGURE_VOICE_ID",
+    "provider": "CONFIGURE_TTS_PROVIDER",
+    "delivery": "धीमा, सधे हुए रहस्य के साथ",
+    "pace_wpm_target": 100,
+    "pronunciation_notes": [
+      "मीरा: मी-रा",
+      "देवगढ़: देव-गढ़",
+      "कबीर: क-बीर",
+      "अर्जुन: अर्-जुन"
+    ],
+    "pause_before_final_reveal_ms": 600,
+    "audio_path": "assets/audio/ep-010.wav",
+    "word_timestamps_path": "episodes/ep-010/word-timings.json",
+    "status": "not_generated"
+  },
+  "scenes": [
+    {
+      "scene_id": "E010-S01",
+      "estimated_start_s": 0,
+      "estimated_end_s": 20,
+      "visual_prompt_hi": "फ़ोन पर रहस्यमय वीडियो पोस्ट। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "slow_push_in",
+      "voiceover_text": "मीरा ने अपनी पहली छोटी वीडियो पोस्ट की। उसने बच्चों के नाम नहीं दिखाए, सिर्फ़ रुकी हुई घड़ी, पीतल का दाँत और तीन सवाल रखे: घड़ी किसने रोकी? बाढ़ का पानी कहाँ से आया?",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    },
+    {
+      "scene_id": "E010-S02",
+      "estimated_start_s": 20,
+      "estimated_end_s": 40,
+      "visual_prompt_hi": "बढ़ती टिप्पणियाँ। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "parallax_left",
+      "voiceover_text": "और आठ बच्चों की सूची में नौवीं जगह खाली क्यों है? कुछ ही मिनटों में हजारों टिप्पणियाँ आने लगीं। अधिकतर लोग इसे भूत की कहानी समझ रहे थे।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    },
+    {
+      "scene_id": "E010-S03",
+      "estimated_start_s": 40,
+      "estimated_end_s": 60,
+      "visual_prompt_hi": "अनजान खाते का संदेश। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "slow_pull_out",
+      "voiceover_text": "फिर एक अकाउंट से संदेश आया—नौवाँ बच्चा कोई था ही नहीं। नौवीं जगह उस इंसान के लिए रखी गई थी जिसने बाकी आठों को बचाया। संदेश भेजने वाले का नाम था—अधूरी हाज़िरी।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    }
+  ],
+  "audience_engagement": {
+    "question_hi": "आपका अनुमान: नौवीं पंक्ति गवाह के लिए है या किसी और के लिए?",
+    "placement": "pinned_comment_and_optional_end_card",
+    "canon_impact": "none"
+  },
+  "continuity": {
+    "arc": "I · घंटी और बच्चे",
+    "episode_summary_hi": "मीरा ने अपनी पहली छोटी वीडियो पोस्ट की। उसने बच्चों के नाम नहीं दिखाए, सिर्फ़ रुकी हुई घड़ी, पीतल का दाँत और तीन सवाल रखे: घड़ी किसने रोकी? बाढ़ का पानी कहाँ से आया? और आ…",
+    "canon_status": "planned",
+    "character_id_refs": []
+  },
+  "production": {
+    "script_status": "draft",
+    "voice_status": "not_generated",
+    "image_status": "not_generated",
+    "render_status": "not_generated",
+    "final_video_path": "outputs/ep-010.mp4"
+  }
+}

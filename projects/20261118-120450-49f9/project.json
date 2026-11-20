@@ -1,0 +1,160 @@
+{
+  "id": "20261118-120450-49f9",
+  "created": 1794983690.324371,
+  "brief": {
+    "brand": "Onomie",
+    "product": "Pet carrier backpack for small pets",
+    "features": "Clear bubble dome window\r\nBreathable mesh and air-vent holes\r\nExpandable side panel\r\nPadded adjustable straps with back support\r\nReinforced safety zippers",
+    "pets": "Bruno the dog, Mishti the cat, Bunty the rabbit, and their human Aria",
+    "language": "Hinglish",
+    "tone": "Emotional, funny, then joyful. Warm like a friend talking",
+    "tagline": "Chalo, saath chalein.",
+    "cta": "Shop now, link in bio",
+    "notes": "",
+    "color": "#ff8a3d",
+    "duration": 26,
+    "images": [
+      "bubble2.webp"
+    ]
+  },
+  "approved": {
+    "script": true,
+    "voice": true,
+    "scenes": false
+  },
+  "script": {
+    "status": "done",
+    "data": {
+      "caption": "क्या आपके pets भी हर ट्रिप पे मिस आउट करते हैं? 🥺 अब नहीं! मिलिए आरिया से और उसके फ़री फ्रेंड्स, ब्रूनो, मिष्टी और बंटी से! 🐶🐱🐰 उन्होंने पाया Onomie का amazing पेट कैरियर! ✨ अब हर सफर है साथ, क्योंकि उनके पास है क्लियर बबल डोम, ब्रीदेबल मेश, और एक्सपेंडेबल साइड पैनल! 😎 आपके pets भी खुश और आप भी टेंशन फ्री! 🥳 Shop now, link in bio! #Onomie #ChaloSaathChalein #PetCarrier #PetTravel #DogLover #CatLover #RabbitLove #IndianPets #TravelWithPets #PetAdventure #MadeInIndia",
+      "hashtags": [
+        "#Onomie",
+        "#ChaloSaathChalein",
+        "#PetCarrier",
+        "#PetTravel",
+        "#DogLover",
+        "#CatLover",
+        "#RabbitLove",
+        "#IndianPets",
+        "#TravelWithPets",
+        "#PetAdventure",
+        "#MadeInIndia"
+      ],
+      "scenes": [
+        {
+          "bullets": [],
+          "headline": "Pets Left Behind?",
+          "id": 1,
+          "image": "bubble2.webp",
+          "motion": "zoom-in",
+          "name": "hook-pets-left-behind",
+          "sticker": "😥",
+          "template": "clip",
+          "vo_roman": "Kya aapke pets trips pe miss out karte hain?",
+          "vo_text": "क्या आपके pets ट्रिप्स पे मिस आउट करते हैं?"
+        },
+        {
+          "bullets": [],
+          "headline": "Travel Troubles!",
+          "id": 2,
+          "image": "",
+          "motion": "pan-left",
+          "name": "problem-aria-struggle",
+          "sticker": "😔",
+          "template": "hook",
+          "vo_roman": "Aria, Bruno, Mishti, Bunty ko le ja nahi paati thi.",
+          "vo_text": "आरिया, ब्रूनो, मिष्टी, बंटी को ले जा नहीं पाती थी।"
+        },
+        {
+          "bullets": [],
+          "headline": "Onomie to Rescue!",
+          "id": 3,
+          "image": "bubble2.webp",
+          "motion": "zoom-in",
+          "name": "product-reveal-onomie",
+          "sticker": "🤩",
+          "template": "full",
+          "vo_roman": "Phir mila use Onomie ka pet carrier!",
+          "vo_text": "फिर मिला उसे ओनोमी का पेट कैरियर!"
+        },
+        {
+          "bullets": [
+            "Clear Bubble Dome",
+            "Breathable Mesh",
+            "Expandable Panel"
+          ],
+          "headline": "Features Galore!",
+          "id": 4,
+          "image": "bubble2.webp",
+          "motion": "zoom-out",
+          "name": "features-showcase",
+          "sticker": "✅",
+          "template": "feature",
+          "vo_roman": "Bubble dome, breathable mesh aur expandable panel.",
+          "vo_text": "बबल डोम, ब्रीदेबल मेश और एक्सपेंडेबल पैनल।"
+        },
+        {
+          "bullets": [],
+          "headline": "Happy Pets, Happy You!",
+          "id": 5,
+          "image": "bubble2.webp",
+          "motion": "pan-up",
+          "name": "payoff-happy-pets",
+          "sticker": "😊",
+          "template": "full",
+          "vo_roman": "Ab Bruno, Mishti, Bunty Aria sang har jagah khush!",
+          "vo_text": "अब ब्रूनो, मिष्टी, बंटी आरिया संग हर जगह खुश!"
+        },
+        {
+          "bullets": [],
+          "headline": "Onomie: Chalo, Saath Chalein.",
+          "id": 6,
+          "image": "",
+          "motion": "zoom-in",
+          "name": "tagline-cta",
+          "sticker": "💖",
+          "template": "hook",
+          "vo_roman": "Apne pets ko saath le jaayen! Onomie, Chalo, saath chalein.",
+          "vo_text": "अपने pets को साथ ले जाएँ! ओनोमी, चलो, साथ चलें।"
+        }
+      ],
+      "title": "Onomie Pet Carrier Reel",
+      "voice_style": "The narrator should sound warm, friendly, and conversational, transitioning from a slightly empathetic tone to a joyful and encouraging one."
+    },
+    "error": null
+  },
+  "voice": {
+    "status": "done",
+    "file": "final/voice_1794983802.wav",
+    "duration": 26.76,
+    "voice": "your upload",
+    "source": "uploaded",
+    "error": null
+  },
+  "scenes": {
+    "1": {
+      "status": "done",
+      "file": "clips/scene1_1794984128534.jpg",
+      "source": "uploaded",
+      "duration": 0.04
+    }
+  },
+  "final": {
+    "status": "idle",
+    "file": null,
+    "error": null,
+    "progress": 0,
+    "draft": false
+  },
+  "logs": [
+    "12:04:50  Project created with 1 product photo(s).",
+    "12:04:51  Asking gemini-2.5-flash to write the script...",
+    "12:05:11  Script ready: 6 scenes. Review it and approve.",
+    "12:05:28  Script approved.",
+    "12:06:47  Voice-over uploaded: 26.8s. Listen and approve.",
+    "12:06:52  Voice-over approved.",
+    "12:07:19  Scenes approved.",
+    "12:07:45  Rendering the draft preview (29.8s, 6 scenes) with Remotion...",
+    "12:09:17  Your draft preview is ready: 29.8s.",
+    "12:12:10  Scene 1: uploaded bubble1.jpg (0.0s)"
+  ]
+}

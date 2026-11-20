@@ -221,4 +221,19 @@ export const Letter: React.FC = () => {
 };
 
 export const CITY_LOCATIONS: Record<string, React.FC> = { road: Road, office: Office, home: Home, dawn: Dawn };
-export const CITY_PROPS: Record<string, React.FC> = { calendar: Calendar, alarm: Alarm, tiffin: Tiffin, letter: Letter };
+/** A big red day counter. The ring pulses like a heartbeat. */
+export const Countdown: React.FC = () => {
+  const f = useCurrentFrame();
+  const beat = (f % 36) / 36;
+  return (
+    <g>
+      <Glow x={0} y={0} r={520} />
+      <circle r={250 + beat * 70} fill="none" stroke={C.red} strokeWidth={8} opacity={1 - beat} />
+      <circle r={250} fill="#150a0c" stroke={C.red} strokeWidth={12} />
+      <text y={40} fontSize={250} fontWeight={800} fill="#ff5a4f" textAnchor="middle" fontFamily="sans-serif">12</text>
+      <text y={150} fontSize={52} fill="#ffb3ab" textAnchor="middle" fontFamily="sans-serif" letterSpacing={8}>DAYS</text>
+    </g>
+  );
+};
+
+export const CITY_PROPS: Record<string, React.FC> = { calendar: Calendar, alarm: Alarm, tiffin: Tiffin, letter: Letter, countdown: Countdown };

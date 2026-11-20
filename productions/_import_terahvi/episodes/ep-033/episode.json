@@ -1,0 +1,75 @@
+{
+  "episode_number": 33,
+  "episode_id": "EP-033",
+  "title_hi": "बिना घंटी की घड़ी",
+  "target_duration_seconds": 60,
+  "narration_hi": "देवगढ़ में केवल एक ऐसी बड़ी घड़ी थी जो कभी घंटी नहीं बजाती थी—रेलवे प्लेटफ़ॉर्म की घड़ी। स्टेशन बंद था, लेकिन वेटिंग हॉल अब भी खड़ा था। वहाँ मीरा ने घड़ी के पीछे धातु का छोटा खांचा देखा। उसमें पीतल का दाँत नहीं, पतली चाबी लगी थी। चाबी निकालते ही घड़ी की मिनट वाली सुई हिलने लगी, मानो अठारह साल की नींद टूट गई हो। उसके पीछे एक बहुत छोटा कागज़ था—अर्जुन: रिकॉर्डिंग भाग दो, बैगेज लॉकर्स। पर सभी लॉकर बहुत पहले हटाए जा चुके थे। कबीर ने देखा कि फर्श की टाइलों पर अब भी पुराने नंबर लिखे थे।",
+  "narration_word_count": 100,
+  "voiceover": {
+    "language": "hi-IN",
+    "voice_id": "CONFIGURE_VOICE_ID",
+    "provider": "CONFIGURE_TTS_PROVIDER",
+    "delivery": "जांचपूर्ण, नियंत्रित तनाव",
+    "pace_wpm_target": 100,
+    "pronunciation_notes": [
+      "मीरा: मी-रा",
+      "देवगढ़: देव-गढ़",
+      "कबीर: क-बीर",
+      "अर्जुन: अर्-जुन"
+    ],
+    "pause_before_final_reveal_ms": 600,
+    "audio_path": "assets/audio/ep-033.wav",
+    "word_timestamps_path": "episodes/ep-033/word-timings.json",
+    "status": "not_generated"
+  },
+  "scenes": [
+    {
+      "scene_id": "E033-S01",
+      "estimated_start_s": 0,
+      "estimated_end_s": 20,
+      "visual_prompt_hi": "सुनसान रेलवे प्लेटफ़ॉर्म। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "slow_push_in",
+      "voiceover_text": "देवगढ़ में केवल एक ऐसी बड़ी घड़ी थी जो कभी घंटी नहीं बजाती थी—रेलवे प्लेटफ़ॉर्म की घड़ी। स्टेशन बंद था, लेकिन वेटिंग हॉल अब भी खड़ा था। वहाँ मीरा ने घड़ी के पीछे धातु का छोटा खांचा देखा।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    },
+    {
+      "scene_id": "E033-S02",
+      "estimated_start_s": 20,
+      "estimated_end_s": 40,
+      "visual_prompt_hi": "बिना घंटी वाली घड़ी। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "parallax_left",
+      "voiceover_text": "उसमें पीतल का दाँत नहीं, पतली चाबी लगी थी। चाबी निकालते ही घड़ी की मिनट वाली सुई हिलने लगी, मानो अठारह साल की नींद टूट गई हो।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    },
+    {
+      "scene_id": "E033-S03",
+      "estimated_start_s": 40,
+      "estimated_end_s": 60,
+      "visual_prompt_hi": "नंबर वाली पुरानी फर्श टाइलें। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "slow_pull_out",
+      "voiceover_text": "उसके पीछे एक बहुत छोटा कागज़ था—अर्जुन: रिकॉर्डिंग भाग दो, बैगेज लॉकर्स। पर सभी लॉकर बहुत पहले हटाए जा चुके थे। कबीर ने देखा कि फर्श की टाइलों पर अब भी पुराने नंबर लिखे थे।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    }
+  ],
+  "audience_engagement": {
+    "question_hi": "आज के एपिसोड “बिना घंटी की घड़ी” में आपके हिसाब से सबसे अहम सुराग कौन-सा था?",
+    "placement": "pinned_comment_and_optional_end_card",
+    "canon_impact": "none"
+  },
+  "continuity": {
+    "arc": "III · मूल रिकॉर्ड की तलाश",
+    "episode_summary_hi": "देवगढ़ में केवल एक ऐसी बड़ी घड़ी थी जो कभी घंटी नहीं बजाती थी—रेलवे प्लेटफ़ॉर्म की घड़ी। स्टेशन बंद था, लेकिन वेटिंग हॉल अब भी खड़ा था। वहाँ मीरा ने घड़ी के पीछे धातु का …",
+    "canon_status": "planned",
+    "character_id_refs": []
+  },
+  "production": {
+    "script_status": "draft",
+    "voice_status": "not_generated",
+    "image_status": "not_generated",
+    "render_status": "not_generated",
+    "final_video_path": "outputs/ep-033.mp4"
+  }
+}

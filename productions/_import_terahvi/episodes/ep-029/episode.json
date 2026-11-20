@@ -1,0 +1,75 @@
+{
+  "episode_number": 29,
+  "episode_id": "EP-029",
+  "title_hi": "अर्जुन के आखिरी दिन",
+  "target_duration_seconds": 60,
+  "narration_hi": "मीरा माँ की पुरानी डायरी लेकर बैठी। उसमें बाढ़ के बाद तीन महीनों तक अर्जुन के भेजे छोटे संदेश चिपकाए गए थे। माँ ने कभी यह बात नहीं बताई थी। आखिरी संदेश में लिखा था—अगर मैं लौट न सकूँ, तो मीरा को सच बताना, डर नहीं। माँ के गुज़र जाने के बाद यह डायरी बंद ही रह गई थी। कबीर ने डाक मुहरें देखीं। सभी संदेश पहाड़ी कस्बे से भेजे गए थे, जहाँ एक पुराना रेडियो स्टेशन था। मीरा ने पूछा, क्या पिता वहाँ छिपे थे? कबीर ने कहा—या किसी को सुरक्षित रखने की कोशिश कर रहे थे।",
+  "narration_word_count": 98,
+  "voiceover": {
+    "language": "hi-IN",
+    "voice_id": "CONFIGURE_VOICE_ID",
+    "provider": "CONFIGURE_TTS_PROVIDER",
+    "delivery": "जांचपूर्ण, नियंत्रित तनाव",
+    "pace_wpm_target": 100,
+    "pronunciation_notes": [
+      "मीरा: मी-रा",
+      "देवगढ़: देव-गढ़",
+      "कबीर: क-बीर",
+      "अर्जुन: अर्-जुन"
+    ],
+    "pause_before_final_reveal_ms": 600,
+    "audio_path": "assets/audio/ep-029.wav",
+    "word_timestamps_path": "episodes/ep-029/word-timings.json",
+    "status": "not_generated"
+  },
+  "scenes": [
+    {
+      "scene_id": "E029-S01",
+      "estimated_start_s": 0,
+      "estimated_end_s": 20,
+      "visual_prompt_hi": "माँ की पुरानी डायरी। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "slow_push_in",
+      "voiceover_text": "मीरा माँ की पुरानी डायरी लेकर बैठी। उसमें बाढ़ के बाद तीन महीनों तक अर्जुन के भेजे छोटे संदेश चिपकाए गए थे। माँ ने कभी यह बात नहीं बताई थी।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    },
+    {
+      "scene_id": "E029-S02",
+      "estimated_start_s": 20,
+      "estimated_end_s": 40,
+      "visual_prompt_hi": "पहाड़ी कस्बे की डाक मुहर। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "parallax_left",
+      "voiceover_text": "आखिरी संदेश में लिखा था—अगर मैं लौट न सकूँ, तो मीरा को सच बताना, डर नहीं। माँ के गुज़र जाने के बाद यह डायरी बंद ही रह गई थी। कबीर ने डाक मुहरें देखीं।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    },
+    {
+      "scene_id": "E029-S03",
+      "estimated_start_s": 40,
+      "estimated_end_s": 60,
+      "visual_prompt_hi": "दूर धुंध में रेडियो स्टेशन। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "slow_pull_out",
+      "voiceover_text": "सभी संदेश पहाड़ी कस्बे से भेजे गए थे, जहाँ एक पुराना रेडियो स्टेशन था। मीरा ने पूछा, क्या पिता वहाँ छिपे थे? कबीर ने कहा—या किसी को सुरक्षित रखने की कोशिश कर रहे थे।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    }
+  ],
+  "audience_engagement": {
+    "question_hi": "आज के एपिसोड “अर्जुन के आखिरी दिन” में आपके हिसाब से सबसे अहम सुराग कौन-सा था?",
+    "placement": "pinned_comment_and_optional_end_card",
+    "canon_impact": "none"
+  },
+  "continuity": {
+    "arc": "II · छिपे हुए गवाह",
+    "episode_summary_hi": "मीरा माँ की पुरानी डायरी लेकर बैठी। उसमें बाढ़ के बाद तीन महीनों तक अर्जुन के भेजे छोटे संदेश चिपकाए गए थे। माँ ने कभी यह बात नहीं बताई थी। आखिरी संदेश में लिखा था—अगर मै…",
+    "canon_status": "planned",
+    "character_id_refs": []
+  },
+  "production": {
+    "script_status": "draft",
+    "voice_status": "not_generated",
+    "image_status": "not_generated",
+    "render_status": "not_generated",
+    "final_video_path": "outputs/ep-029.mp4"
+  }
+}

@@ -7,7 +7,8 @@ import { C } from "./palette";
  * so they look identical in every episode. Figures are drawn as bust portraits with the origin at the bottom centre
  * (head centre at y = -640). Faces are minimal on purpose: a few features, half in shadow.
  */
-export type CharacterId = "MEERA" | "KABIR" | "RAHIM" | "TARA" | "NANDINI" | "VIKRAM" | "VINAY" | "DEEPA" | "ARJUN" | "CHILD" | "CHOWKIDAR" | "OFFICER" | "NURSE" | "RAJAT";
+export type CharacterId = "MEERA" | "KABIR" | "RAHIM" | "TARA" | "NANDINI" | "VIKRAM" | "VINAY" | "DEEPA" | "ARJUN" | "CHILD" | "CHOWKIDAR" | "OFFICER" | "NURSE" | "RAJAT" | "AARAV" | "NEERAJ";
+/** Zameen Ke Neeche has its own cast (AARAV, NEERAJ, ...). Do not reuse Terahvi characters in it, or the other way round. */
 export type Mood = "calm" | "worried" | "shock" | "sad" | "stern" | "tired" | "happy" | "resolute";
 export type Action = "idle" | "walk" | "slump" | "lookup" | "nod";
 
@@ -38,6 +39,8 @@ export const LOOKS: Record<CharacterId, Look> = {
   CHOWKIDAR: { skin: "#9c6e4c", hair: "#2a2724", outfit: "#6f6a52", hairStyle: "short", extras: ["cap", "mustache", "badge"], age: 58 },
   OFFICER: { skin: "#a97c59", hair: "#2a2a2c", outfit: "#3a4252", trim: "#e9e6df", hairStyle: "short", extras: ["collar", "badge"], age: 45 },
   RAJAT: { skin: "#a9744f", hair: "#15120f", outfit: "#5c6b7a", hairStyle: "short", extras: ["tie", "badge", "stubble"], age: 34 },
+  AARAV: { skin: "#a8764f", hair: "#7a7a7e", outfit: "#33465a", hairStyle: "short", extras: ["tie", "badge", "glasses"], age: 46 },
+  NEERAJ: { skin: "#a4764f", hair: "#1c1a1a", outfit: "#6a7a84", hairStyle: "short", extras: ["badge", "collar"], age: 38, trim: "#d9d9d2" },
   NURSE: { skin: "#b07f5b", hair: "#120f0f", outfit: "#d9dede", hairStyle: "bun", extras: ["whitecoat"], age: 32 },
 };
 
@@ -143,7 +146,9 @@ export const Character: React.FC<{
   mood?: Mood;
   /** body language: idle (breathing, blinking), walk, slump, lookup, nod */
   action?: Action;
-}> = ({ id, x = 540, y = 1850, scale: baseScale = 1.3, flip = false, shadow = 0.2, face = true, mood = "calm", action = "idle" }) => {
+  /** storybook look: no dark half-face, bigger sparkling eyes, blush, a gentle smile */
+  friendly?: boolean;
+}> = ({ id, x = 540, y = 1850, scale: baseScale = 1.3, flip = false, shadow = 0.2, face = true, mood = "calm", action = "idle", friendly = false }) => {
   const look = LOOKS[id];
   const scale = baseScale * (look.size ?? 1);
   const clip = "head" + useId().replace(/[^a-zA-Z0-9]/g, "");
@@ -203,19 +208,25 @@ export const Character: React.FC<{
           <ellipse cx={HEAD.cx} cy={HEAD.cy} rx={HEAD.rx} ry={HEAD.ry} fill={look.skin} />
           <clipPath id={clip}><ellipse cx={HEAD.cx} cy={HEAD.cy} rx={HEAD.rx} ry={HEAD.ry} /></clipPath>
           <g clipPath={`url(#${clip})`}>
-            <rect x={5} y={-800} width={130} height={320} fill={C.ink} opacity={0.4 + shadow * 0.35} />
+            <rect x={5} y={-800} width={130} height={320} fill={C.ink} opacity={friendly ? 0.1 : 0.4 + shadow * 0.35} />
             {has("beard") && <path d="M-105 -620 Q-100 -470 0 -455 Q100 -470 105 -620 Q60 -540 0 -535 Q-60 -540 -105 -620 Z" fill={look.hair} />}
             {has("stubble") && <path d="M-105 -600 Q-90 -500 0 -495 Q90 -500 105 -600 L100 -520 Q0 -440 -100 -520 Z" fill={C.ink} opacity={0.3} />}
           </g>
           {has("mustache") && <path d="M-46 -585 Q0 -610 46 -585 Q0 -595 -46 -585 Z" fill={look.hair} />}
           {face && (
             <g>
-              <ellipse cx={-42} cy={-650} rx={14} ry={eyeRy} fill={C.ink} opacity={0.9} />
-              <ellipse cx={44} cy={-650} rx={14} ry={eyeRy} fill={C.ink} opacity={0.7} />
+              <ellipse cx={-42} cy={-650} rx={friendly ? 17 : 14} ry={eyeRy * (friendly ? 1.5 : 1)} fill={C.ink} opacity={0.9} />
+              <ellipse cx={44} cy={-650} rx={friendly ? 17 : 14} ry={eyeRy * (friendly ? 1.5 : 1)} fill={C.ink} opacity={friendly ? 0.9 : 0.7} />
+              {friendly && m.blink > 0.6 && (
+                <g fill="#fff" opacity={0.9}>
+                  <circle cx={-36} cy={-657} r={5} /><circle cx={50} cy={-657} r={5} />
+                </g>
+              )}
+              {friendly && <g fill="#e0706a" opacity={0.3}><ellipse cx={-72} cy={-596} rx={26} ry={15} /><ellipse cx={74} cy={-596} rx={26} ry={15} /></g>}
               {mood === "tired" && <path d="M-58 -626 Q-42 -616 -26 -626 M28 -626 Q44 -616 60 -626" stroke={C.ink} strokeWidth={4} fill="none" opacity={0.3} />}
               <path d={BROWS[mood]} stroke={look.hair === "#e8e6e0" ? "#cfcfc8" : C.ink} strokeWidth={6} fill="none" strokeLinecap="round" />
               <path d="M-4 -640 Q-12 -600 4 -596" stroke={C.ink} strokeWidth={4} fill="none" opacity={0.35} />
-              <path d={MOUTHS[mood]} stroke={C.ink} strokeWidth={5} fill={mood === "shock" ? C.ink : "none"} strokeLinecap="round" opacity={0.7} />
+              <path d={friendly && mood === "calm" ? "M-28 -574 Q0 -550 28 -574" : MOUTHS[mood]} stroke={C.ink} strokeWidth={5} fill={mood === "shock" ? C.ink : "none"} strokeLinecap="round" opacity={0.7} />
             </g>
           )}
           {has("glasses") && (

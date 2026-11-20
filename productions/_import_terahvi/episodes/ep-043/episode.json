@@ -1,0 +1,75 @@
+{
+  "episode_number": 43,
+  "episode_id": "EP-043",
+  "title_hi": "सायरन टॉवर",
+  "target_duration_seconds": 60,
+  "narration_hi": "पुराना सायरन टॉवर बाजार के बीच खड़ा था। मीरा और कबीर नगरपालिका की अनुमति लेकर ऊपर गए। लोहे के ढाँचे में एक बंद डिब्बा मिला, जिस पर सरकारी सील पुरानी थी। वे उसे स्वयं तोड़ने के बजाय वकील और निरीक्षण अधिकारी की मौजूदगी में खुलवाते हैं। भीतर धूल से भरी आवाज़ रिकॉर्डिंग रील थी। कबीर ने उसे साफ़ कर सुरक्षित डिजिटल कॉपी बनाई। रिकॉर्डिंग में चेतावनी, घबराई आवाज़ें और फाटक की चेन सुनाई दी। फिर कोई व्यक्ति कहता था—सायरन मत बजाओ, समारोह शुरू होने वाला है। आवाज़ विक्रम जैसी थी, लेकिन अभी पहचान सत्यापित करनी थी।",
+  "narration_word_count": 96,
+  "voiceover": {
+    "language": "hi-IN",
+    "voice_id": "CONFIGURE_VOICE_ID",
+    "provider": "CONFIGURE_TTS_PROVIDER",
+    "delivery": "जांचपूर्ण, नियंत्रित तनाव",
+    "pace_wpm_target": 100,
+    "pronunciation_notes": [
+      "मीरा: मी-रा",
+      "देवगढ़: देव-गढ़",
+      "कबीर: क-बीर",
+      "अर्जुन: अर्-जुन"
+    ],
+    "pause_before_final_reveal_ms": 600,
+    "audio_path": "assets/audio/ep-043.wav",
+    "word_timestamps_path": "episodes/ep-043/word-timings.json",
+    "status": "not_generated"
+  },
+  "scenes": [
+    {
+      "scene_id": "E043-S01",
+      "estimated_start_s": 0,
+      "estimated_end_s": 20,
+      "visual_prompt_hi": "शहर का सायरन टॉवर। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "slow_push_in",
+      "voiceover_text": "पुराना सायरन टॉवर बाजार के बीच खड़ा था। मीरा और कबीर नगरपालिका की अनुमति लेकर ऊपर गए। लोहे के ढाँचे में एक बंद डिब्बा मिला, जिस पर सरकारी सील पुरानी थी।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    },
+    {
+      "scene_id": "E043-S02",
+      "estimated_start_s": 20,
+      "estimated_end_s": 40,
+      "visual_prompt_hi": "सीलबंद लोहे का बॉक्स। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "parallax_left",
+      "voiceover_text": "वे उसे स्वयं तोड़ने के बजाय वकील और निरीक्षण अधिकारी की मौजूदगी में खुलवाते हैं। भीतर धूल से भरी आवाज़ रिकॉर्डिंग रील थी। कबीर ने उसे साफ़ कर सुरक्षित डिजिटल कॉपी बनाई।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    },
+    {
+      "scene_id": "E043-S03",
+      "estimated_start_s": 40,
+      "estimated_end_s": 60,
+      "visual_prompt_hi": "पुरानी ऑडियो रील। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "slow_pull_out",
+      "voiceover_text": "रिकॉर्डिंग में चेतावनी, घबराई आवाज़ें और फाटक की चेन सुनाई दी। फिर कोई व्यक्ति कहता था—सायरन मत बजाओ, समारोह शुरू होने वाला है। आवाज़ विक्रम जैसी थी, लेकिन अभी पहचान सत्यापित करनी थी।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    }
+  ],
+  "audience_engagement": {
+    "question_hi": "रिकॉर्डिंग में आदेश किसने दिया होगा?",
+    "placement": "pinned_comment_and_optional_end_card",
+    "canon_impact": "none"
+  },
+  "continuity": {
+    "arc": "III · मूल रिकॉर्ड की तलाश",
+    "episode_summary_hi": "पुराना सायरन टॉवर बाजार के बीच खड़ा था। मीरा और कबीर नगरपालिका की अनुमति लेकर ऊपर गए। लोहे के ढाँचे में एक बंद डिब्बा मिला, जिस पर सरकारी सील पुरानी थी। वे उसे स्वयं तोड़…",
+    "canon_status": "planned",
+    "character_id_refs": []
+  },
+  "production": {
+    "script_status": "draft",
+    "voice_status": "not_generated",
+    "image_status": "not_generated",
+    "render_status": "not_generated",
+    "final_video_path": "outputs/ep-043.mp4"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "episode_number": 31,
+  "episode_id": "EP-031",
+  "title_hi": "टेप किसने चलाया",
+  "target_duration_seconds": 60,
+  "narration_hi": "कबीर ने टेप रोका। मशीन के बगल में एक टाइमर लगा था, जिसे उसी सुबह सेट किया गया था। इसका मतलब कोई हाल में यहाँ आया था। दीवार पर कई बिंदु लाल धागे से जुड़े थे: स्कूल, नगरपालिका, जलाशय और रेडियो स्टेशन। यह किसी जासूस का नक्शा नहीं, अर्जुन की बनाई जांच थी। उसके बीच एक नया कागज़ लगा था—अपनी बेटी को अकेला मत छोड़ना। मीरा को समझ नहीं आया कि यह पुरानी चेतावनी है या वर्तमान संदेश। सीढ़ियों पर खटखटाहट हुई। नीचे से रहीम चाचा की आवाज़ आई—कृपया टेप बंद कर दो, अभी पूरी सच्चाई सुनना सुरक्षित नहीं।",
+  "narration_word_count": 99,
+  "voiceover": {
+    "language": "hi-IN",
+    "voice_id": "CONFIGURE_VOICE_ID",
+    "provider": "CONFIGURE_TTS_PROVIDER",
+    "delivery": "जांचपूर्ण, नियंत्रित तनाव",
+    "pace_wpm_target": 100,
+    "pronunciation_notes": [
+      "मीरा: मी-रा",
+      "देवगढ़: देव-गढ़",
+      "कबीर: क-बीर",
+      "अर्जुन: अर्-जुन"
+    ],
+    "pause_before_final_reveal_ms": 600,
+    "audio_path": "assets/audio/ep-031.wav",
+    "word_timestamps_path": "episodes/ep-031/word-timings.json",
+    "status": "not_generated"
+  },
+  "scenes": [
+    {
+      "scene_id": "E031-S01",
+      "estimated_start_s": 0,
+      "estimated_end_s": 20,
+      "visual_prompt_hi": "टाइमर से जुड़ी टेप मशीन। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "slow_push_in",
+      "voiceover_text": "कबीर ने टेप रोका। मशीन के बगल में एक टाइमर लगा था, जिसे उसी सुबह सेट किया गया था। इसका मतलब कोई हाल में यहाँ आया था।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    },
+    {
+      "scene_id": "E031-S02",
+      "estimated_start_s": 20,
+      "estimated_end_s": 40,
+      "visual_prompt_hi": "लाल धागों वाला जांच नक्शा। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "parallax_left",
+      "voiceover_text": "दीवार पर कई बिंदु लाल धागे से जुड़े थे: स्कूल, नगरपालिका, जलाशय और रेडियो स्टेशन। यह किसी जासूस का नक्शा नहीं, अर्जुन की बनाई जांच थी। उसके बीच एक नया कागज़ लगा था—अपनी बेटी को अकेला मत छोड़ना।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    },
+    {
+      "scene_id": "E031-S03",
+      "estimated_start_s": 40,
+      "estimated_end_s": 60,
+      "visual_prompt_hi": "सीढ़ियों पर रहीम। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "slow_pull_out",
+      "voiceover_text": "मीरा को समझ नहीं आया कि यह पुरानी चेतावनी है या वर्तमान संदेश। सीढ़ियों पर खटखटाहट हुई। नीचे से रहीम चाचा की आवाज़ आई—कृपया टेप बंद कर दो, अभी पूरी सच्चाई सुनना सुरक्षित नहीं।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    }
+  ],
+  "audience_engagement": {
+    "question_hi": "आज के एपिसोड “टेप किसने चलाया” में आपके हिसाब से सबसे अहम सुराग कौन-सा था?",
+    "placement": "pinned_comment_and_optional_end_card",
+    "canon_impact": "none"
+  },
+  "continuity": {
+    "arc": "III · मूल रिकॉर्ड की तलाश",
+    "episode_summary_hi": "कबीर ने टेप रोका। मशीन के बगल में एक टाइमर लगा था, जिसे उसी सुबह सेट किया गया था। इसका मतलब कोई हाल में यहाँ आया था। दीवार पर कई बिंदु लाल धागे से जुड़े थे: स्कूल, नगरपाल…",
+    "canon_status": "planned",
+    "character_id_refs": []
+  },
+  "production": {
+    "script_status": "draft",
+    "voice_status": "not_generated",
+    "image_status": "not_generated",
+    "render_status": "not_generated",
+    "final_video_path": "outputs/ep-031.mp4"
+  }
+}

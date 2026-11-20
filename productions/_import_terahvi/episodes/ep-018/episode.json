@@ -1,0 +1,75 @@
+{
+  "episode_number": 18,
+  "episode_id": "EP-018",
+  "title_hi": "डिब्बा तेरह",
+  "target_duration_seconds": 60,
+  "narration_hi": "नीचे कमरे में लकड़ी की छह अलमारियाँ थीं। आखिरी अलमारी के नीचे जंग लगा डिब्बा नंबर तेरह रखा था। कबीर ने उसे खोला तो अंदर आठ कांच की छोटी शीशियाँ मिलीं, जिनमें मिट्टी भरी थी। हर शीशी पर एक अक्षर था। साथ एक पर्ची—जहाँ ज़मीन बदली, वहीं कहानी बदली। मीरा को यह सब बेकार लगा। तभी कबीर ने देखा कि डिब्बे के ढक्कन की दूसरी तरफ पुराने भूमि अभिलेख की एक मुड़ी हुई प्रति चिपकी थी। उसके मुताबिक जिस ज़मीन पर अब लक्ज़री रिसॉर्ट है, वह पहले बाढ़ प्रभावित परिवारों के लिए सुरक्षित रखी गई थी।",
+  "narration_word_count": 96,
+  "voiceover": {
+    "language": "hi-IN",
+    "voice_id": "CONFIGURE_VOICE_ID",
+    "provider": "CONFIGURE_TTS_PROVIDER",
+    "delivery": "धीमा, सधे हुए रहस्य के साथ",
+    "pace_wpm_target": 100,
+    "pronunciation_notes": [
+      "मीरा: मी-रा",
+      "देवगढ़: देव-गढ़",
+      "कबीर: क-बीर",
+      "अर्जुन: अर्-जुन"
+    ],
+    "pause_before_final_reveal_ms": 600,
+    "audio_path": "assets/audio/ep-018.wav",
+    "word_timestamps_path": "episodes/ep-018/word-timings.json",
+    "status": "not_generated"
+  },
+  "scenes": [
+    {
+      "scene_id": "E018-S01",
+      "estimated_start_s": 0,
+      "estimated_end_s": 20,
+      "visual_prompt_hi": "डिब्बा तेरह। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "slow_push_in",
+      "voiceover_text": "नीचे कमरे में लकड़ी की छह अलमारियाँ थीं। आखिरी अलमारी के नीचे जंग लगा डिब्बा नंबर तेरह रखा था। कबीर ने उसे खोला तो अंदर आठ कांच की छोटी शीशियाँ मिलीं, जिनमें मिट्टी भरी थी।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    },
+    {
+      "scene_id": "E018-S02",
+      "estimated_start_s": 20,
+      "estimated_end_s": 40,
+      "visual_prompt_hi": "मिट्टी वाली आठ शीशियाँ। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "parallax_left",
+      "voiceover_text": "हर शीशी पर एक अक्षर था। साथ एक पर्ची—जहाँ ज़मीन बदली, वहीं कहानी बदली। मीरा को यह सब बेकार लगा।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    },
+    {
+      "scene_id": "E018-S03",
+      "estimated_start_s": 40,
+      "estimated_end_s": 60,
+      "visual_prompt_hi": "जमीन का पुराना नक्शा। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "slow_pull_out",
+      "voiceover_text": "तभी कबीर ने देखा कि डिब्बे के ढक्कन की दूसरी तरफ पुराने भूमि अभिलेख की एक मुड़ी हुई प्रति चिपकी थी। उसके मुताबिक जिस ज़मीन पर अब लक्ज़री रिसॉर्ट है, वह पहले बाढ़ प्रभावित परिवारों के लिए सुरक्षित रखी गई थी।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    }
+  ],
+  "audience_engagement": {
+    "question_hi": "मिट्टी की आठ शीशियों का एक साथ क्या मतलब हो सकता है?",
+    "placement": "pinned_comment_and_optional_end_card",
+    "canon_impact": "none"
+  },
+  "continuity": {
+    "arc": "II · छिपे हुए गवाह",
+    "episode_summary_hi": "नीचे कमरे में लकड़ी की छह अलमारियाँ थीं। आखिरी अलमारी के नीचे जंग लगा डिब्बा नंबर तेरह रखा था। कबीर ने उसे खोला तो अंदर आठ कांच की छोटी शीशियाँ मिलीं, जिनमें मिट्टी भरी थ…",
+    "canon_status": "planned",
+    "character_id_refs": []
+  },
+  "production": {
+    "script_status": "draft",
+    "voice_status": "not_generated",
+    "image_status": "not_generated",
+    "render_status": "not_generated",
+    "final_video_path": "outputs/ep-018.mp4"
+  }
+}

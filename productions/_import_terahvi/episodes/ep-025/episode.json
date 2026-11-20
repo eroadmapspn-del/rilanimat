@@ -1,0 +1,75 @@
+{
+  "episode_number": 25,
+  "episode_id": "EP-025",
+  "title_hi": "घड़ी की पट्टी",
+  "target_duration_seconds": 60,
+  "narration_hi": "वीडियो में विक्रम सचमुच अपनी घड़ी की पट्टी घुमा रहा था। मगर कबीर ने चेताया—यह आदत किसी को अपराधी साबित नहीं करती। उन्हें ठोस प्रमाण चाहिए। तारा ने अपनी बचपन की डायरी निकाली। एक पन्ने पर आठ बच्चों ने जलाशय के पास खड़ी दो गाड़ियों के नंबर लिखे थे। पहली गाड़ी नगर परिषद की थी। दूसरी पर एक निजी कंपनी का निशान। वही कंपनी बाद में रिसॉर्ट की मालिक बनी। मीरा ने समझा कि उस रात वहां सिर्फ़ पानी नहीं, कोई सौदा भी चल रहा था। डायरी के आखिरी पन्ने पर लिखा था—नीला कमरा मत भूलना।",
+  "narration_word_count": 96,
+  "voiceover": {
+    "language": "hi-IN",
+    "voice_id": "CONFIGURE_VOICE_ID",
+    "provider": "CONFIGURE_TTS_PROVIDER",
+    "delivery": "जांचपूर्ण, नियंत्रित तनाव",
+    "pace_wpm_target": 100,
+    "pronunciation_notes": [
+      "मीरा: मी-रा",
+      "देवगढ़: देव-गढ़",
+      "कबीर: क-बीर",
+      "अर्जुन: अर्-जुन"
+    ],
+    "pause_before_final_reveal_ms": 600,
+    "audio_path": "assets/audio/ep-025.wav",
+    "word_timestamps_path": "episodes/ep-025/word-timings.json",
+    "status": "not_generated"
+  },
+  "scenes": [
+    {
+      "scene_id": "E025-S01",
+      "estimated_start_s": 0,
+      "estimated_end_s": 20,
+      "visual_prompt_hi": "वीडियो में घड़ी पर हाथ। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "slow_push_in",
+      "voiceover_text": "वीडियो में विक्रम सचमुच अपनी घड़ी की पट्टी घुमा रहा था। मगर कबीर ने चेताया—यह आदत किसी को अपराधी साबित नहीं करती। उन्हें ठोस प्रमाण चाहिए। तारा ने अपनी बचपन की डायरी निकाली।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    },
+    {
+      "scene_id": "E025-S02",
+      "estimated_start_s": 20,
+      "estimated_end_s": 40,
+      "visual_prompt_hi": "बचपन की डायरी। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "parallax_left",
+      "voiceover_text": "एक पन्ने पर आठ बच्चों ने जलाशय के पास खड़ी दो गाड़ियों के नंबर लिखे थे। पहली गाड़ी नगर परिषद की थी। दूसरी पर एक निजी कंपनी का निशान।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    },
+    {
+      "scene_id": "E025-S03",
+      "estimated_start_s": 40,
+      "estimated_end_s": 60,
+      "visual_prompt_hi": "जलाशय के पास दो पुरानी गाड़ियाँ। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "slow_pull_out",
+      "voiceover_text": "वही कंपनी बाद में रिसॉर्ट की मालिक बनी। मीरा ने समझा कि उस रात वहां सिर्फ़ पानी नहीं, कोई सौदा भी चल रहा था। डायरी के आखिरी पन्ने पर लिखा था—नीला कमरा मत भूलना।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    }
+  ],
+  "audience_engagement": {
+    "question_hi": "घड़ी की पट्टी वाली आदत क्या उपयोगी सुराग है या भ्रम?",
+    "placement": "pinned_comment_and_optional_end_card",
+    "canon_impact": "none"
+  },
+  "continuity": {
+    "arc": "II · छिपे हुए गवाह",
+    "episode_summary_hi": "वीडियो में विक्रम सचमुच अपनी घड़ी की पट्टी घुमा रहा था। मगर कबीर ने चेताया—यह आदत किसी को अपराधी साबित नहीं करती। उन्हें ठोस प्रमाण चाहिए। तारा ने अपनी बचपन की डायरी निका…",
+    "canon_status": "planned",
+    "character_id_refs": []
+  },
+  "production": {
+    "script_status": "draft",
+    "voice_status": "not_generated",
+    "image_status": "not_generated",
+    "render_status": "not_generated",
+    "final_video_path": "outputs/ep-025.mp4"
+  }
+}

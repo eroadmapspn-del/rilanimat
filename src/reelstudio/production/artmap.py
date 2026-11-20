@@ -10,13 +10,13 @@ from __future__ import annotations
 
 import unicodedata
 
-CHARACTERS = ["MEERA", "KABIR", "RAHIM", "TARA", "NANDINI", "VIKRAM", "VINAY", "DEEPA", "ARJUN", "CHILD", "CHOWKIDAR", "OFFICER", "NURSE", "RAJAT"]
+CHARACTERS = ["MEERA", "KABIR", "RAHIM", "TARA", "NANDINI", "VIKRAM", "VINAY", "DEEPA", "ARJUN", "CHILD", "CHOWKIDAR", "OFFICER", "NURSE", "RAJAT", "AARAV", "NEERAJ"]
 MOODS = ["calm", "worried", "shock", "sad", "stern", "tired", "happy", "resolute"]
 ACTIONS = ["idle", "walk", "slump", "lookup", "nod"]
 LOCATIONS = ["clock-tower", "archive", "school", "tunnel", "clock-shop", "pump-station", "reservoir", "hospital",
              "radio-station", "platform", "siren-tower", "resort", "godown", "generic", "road", "office", "home", "dawn"]
 PROPS = ["clock", "clock-ringing", "envelope", "recorder", "child-shadow", "files", "register", "photo", "map", "tape", "waveform",
-         "lantern", "idcards", "gear", "siren", "window-shadows", "water", "headline", "diary", "screen", "phone", "calendar", "alarm", "tiffin", "letter"]
+         "lantern", "idcards", "gear", "siren", "window-shadows", "water", "headline", "diary", "screen", "phone", "calendar", "alarm", "tiffin", "letter", "countdown"]
 
 _PEOPLE = {"MEERA": ["मीरा"], "KABIR": ["कबीर"], "RAHIM": ["रहीम"], "TARA": ["तारा", "तारिका"], "NANDINI": ["नंदिनी"],
            "VIKRAM": ["विक्रम"], "VINAY": ["विनय"], "DEEPA": ["दीपा"], "ARJUN": ["अर्जुन"],

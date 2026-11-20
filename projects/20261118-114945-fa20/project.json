@@ -1,0 +1,162 @@
+{
+  "id": "20261118-114945-fa20",
+  "created": 1794982785.243041,
+  "brief": {
+    "brand": "Onomie",
+    "product": "Pet carrier backpack for small pets",
+    "features": "Clear bubble dome window\nBreathable mesh and air-vent holes\nExpandable side panel\nPadded adjustable straps\nReinforced safety zippers",
+    "pets": "Bruno the dog, Mishti the cat, Bunty the rabbit, and their human Aria",
+    "language": "Hinglish",
+    "tone": "Emotional, funny, then joyful",
+    "tagline": "Chalo, saath chalein.",
+    "cta": "Shop now, link in bio",
+    "notes": "",
+    "color": "#ff8a3d",
+    "duration": 26,
+    "images": [
+      "bag1.jpg",
+      "bag2.webp",
+      "kitty_bag1.jpg",
+      "kitty_bag2.webp"
+    ]
+  },
+  "approved": {
+    "script": true,
+    "voice": true,
+    "scenes": true
+  },
+  "script": {
+    "status": "done",
+    "data": {
+      "title": "Onomie Pet Carrier Backpack Ad",
+      "voice_style": "A warm, friendly, conversational Indian voice, transitioning from a slightly concerned tone to joyful excitement.",
+      "scenes": [
+        {
+          "id": 1,
+          "name": "hook-problem",
+          "vo_text": "अरे, आरिया को बाहर जाना है, पर ब्रूनो, मिष्टी, बंटी को कौन देखेगा? इन्हें अकेला छोड़ना मुश्किल!",
+          "vo_roman": "Are, Aria ko bahar jaana hai, par Bruno, Mishti, Bunty ko kaun dekhega? Inhe akela chhodna mushkil!",
+          "template": "hook",
+          "image": "bag1.jpg",
+          "headline": "Leaving Pets Behind?",
+          "bullets": [],
+          "sticker": "😢",
+          "motion": "zoom-in"
+        },
+        {
+          "id": 2,
+          "name": "product-reveal",
+          "vo_text": "अब नहीं! पेश है ओनॉमी का पेट कैरियर बैकपैक!",
+          "vo_roman": "Ab nahin! Pesh hai Onomie ka pet carrier backpack!",
+          "template": "full",
+          "image": "bag1.jpg",
+          "headline": "Problem Solved!",
+          "bullets": [],
+          "sticker": "✨",
+          "motion": "zoom-out"
+        },
+        {
+          "id": 3,
+          "name": "feature-dome-mesh-expand",
+          "vo_text": "क्लियर बबल डोम, ब्रीदबल मेश, एक्सपेंडेबल साइड पैनल।",
+          "vo_roman": "Clear bubble dome, breathable mesh, expandable side panel.",
+          "template": "feature",
+          "image": "kitty_bag1.jpg",
+          "headline": "Explore & Breathe!",
+          "bullets": [
+            "Clear Bubble Dome",
+            "Breathable Mesh",
+            "Expandable Side Panel"
+          ],
+          "sticker": "🐾",
+          "motion": "pan-right"
+        },
+        {
+          "id": 4,
+          "name": "feature-comfort-safety",
+          "vo_text": "पैडेड स्ट्रैप्स से आरिया को भी आराम। रीइन्फोर्स्ड ज़िपर्स भी हैं।",
+          "vo_roman": "Padded straps se Aria ko bhi aaram. Reinforced zippers bhi hain.",
+          "template": "feature",
+          "image": "bag2.webp",
+          "headline": "Comfort & Safety!",
+          "bullets": [
+            "Padded Adjustable Straps",
+            "Reinforced Safety Zippers"
+          ],
+          "sticker": "🛡️",
+          "motion": "zoom-in"
+        },
+        {
+          "id": 5,
+          "name": "happy-payoff",
+          "vo_text": "अब हर जगह साथ, खुशियों का सफर।",
+          "vo_roman": "Ab har jagah saath, khushiyon ka safar.",
+          "template": "full",
+          "image": "kitty_bag2.webp",
+          "headline": "Together Forever!",
+          "bullets": [],
+          "sticker": "🥳",
+          "motion": "pan-up"
+        },
+        {
+          "id": 6,
+          "name": "tagline-cta",
+          "vo_text": "चलो, साथ चलें!",
+          "vo_roman": "Chalo, saath chalein!",
+          "template": "hook",
+          "image": "",
+          "headline": "Onomie: Chalo, Saath Chalein!",
+          "bullets": [],
+          "sticker": "❤️",
+          "motion": "zoom-in"
+        }
+      ],
+      "caption": "Missing out on adventures with your furry friends? Not anymore! 🐾 Onomie's Pet Carrier Backpack makes every journey joyful for Bruno, Mishti, Bunty, and Aria! With a clear bubble dome, expandable space, and super comfy straps, every trip is an exciting experience. Get yours and start new adventures! ✨ Shop now, link in bio!",
+      "hashtags": [
+        "#Onomie",
+        "#PetCarrier",
+        "#PetBackpack",
+        "#DogTravel",
+        "#CatTravel",
+        "#RabbitTravel",
+        "#PetAdventures",
+        "#TravelWithPets",
+        "#HinglishReels",
+        "#ChaloSaathChalein",
+        "#PetParents",
+        "#IndiaPets"
+      ]
+    },
+    "error": null
+  },
+  "voice": {
+    "status": "done",
+    "file": "final/voice_1794982853.wav",
+    "duration": 26.76,
+    "voice": "your upload",
+    "source": "uploaded",
+    "error": null
+  },
+  "scenes": {},
+  "final": {
+    "status": "done",
+    "file": "final/reel.mp4?v=1794983270",
+    "error": null,
+    "progress": 100,
+    "draft": false
+  },
+  "logs": [
+    "11:49:45  Project created with 4 product photo(s).",
+    "11:49:45  Asking gemini-2.5-flash to write the script...",
+    "11:50:02  attempt 1/3 failed: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+    "11:50:45  Script ready: 6 scenes. Review it and approve.",
+    "11:50:53  Script approved.",
+    "11:50:59  Voice-over uploaded: 26.8s. Listen and approve.",
+    "11:50:59  Voice-over approved.",
+    "11:50:59  Scenes approved.",
+    "11:51:02  Rendering the draft preview (29.8s, 6 scenes) with Remotion...",
+    "11:52:30  Your draft preview is ready: 29.8s.",
+    "11:53:38  Rendering the final reel (29.8s, 6 scenes) with Remotion...",
+    "11:57:50  Your final reel is ready: 29.8s."
+  ]
+}

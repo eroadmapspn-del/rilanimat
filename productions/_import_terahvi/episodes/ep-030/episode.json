@@ -1,0 +1,75 @@
+{
+  "episode_number": 30,
+  "episode_id": "EP-030",
+  "title_hi": "रेडियो स्टेशन की बत्ती",
+  "target_duration_seconds": 60,
+  "narration_hi": "पहाड़ी रेडियो स्टेशन कई साल पहले बंद हो चुका था। फिर भी उसकी छत पर लाल चेतावनी बत्ती जल रही थी। मीरा और कबीर अंदर पहुँचे तो डेस्क पर पुराना माइक्रोफोन, धूल और हाल में इस्तेमाल किया गया हेडफ़ोन था। टेप मशीन में नई रील नहीं, पुराना चुंबकीय टेप घूम रहा था। मीरा ने प्ले दबाया। अर्जुन की आवाज़ आई—अगर तुम यह सुन रहे हो, तो मैं शायद अपनी लड़ाई पूरी नहीं कर पाया। उन्होंने शहर के नक्शे, जलाशय के लॉग और आठ बच्चों के बारे में बात की। फिर अचानक आवाज़ रुकी, और किसी दूसरे व्यक्ति ने कहा—इसे अभी बंद करो।",
+  "narration_word_count": 102,
+  "voiceover": {
+    "language": "hi-IN",
+    "voice_id": "CONFIGURE_VOICE_ID",
+    "provider": "CONFIGURE_TTS_PROVIDER",
+    "delivery": "जांचपूर्ण, नियंत्रित तनाव",
+    "pace_wpm_target": 100,
+    "pronunciation_notes": [
+      "मीरा: मी-रा",
+      "देवगढ़: देव-गढ़",
+      "कबीर: क-बीर",
+      "अर्जुन: अर्-जुन"
+    ],
+    "pause_before_final_reveal_ms": 600,
+    "audio_path": "assets/audio/ep-030.wav",
+    "word_timestamps_path": "episodes/ep-030/word-timings.json",
+    "status": "not_generated"
+  },
+  "scenes": [
+    {
+      "scene_id": "E030-S01",
+      "estimated_start_s": 0,
+      "estimated_end_s": 20,
+      "visual_prompt_hi": "पहाड़ी रेडियो टॉवर। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "slow_push_in",
+      "voiceover_text": "पहाड़ी रेडियो स्टेशन कई साल पहले बंद हो चुका था। फिर भी उसकी छत पर लाल चेतावनी बत्ती जल रही थी। मीरा और कबीर अंदर पहुँचे तो डेस्क पर पुराना माइक्रोफोन, धूल और हाल में इस्तेमाल किया गया हेडफ़ोन था।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    },
+    {
+      "scene_id": "E030-S02",
+      "estimated_start_s": 20,
+      "estimated_end_s": 40,
+      "visual_prompt_hi": "घूमती पुरानी टेप रील। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "parallax_left",
+      "voiceover_text": "टेप मशीन में नई रील नहीं, पुराना चुंबकीय टेप घूम रहा था। मीरा ने प्ले दबाया। अर्जुन की आवाज़ आई—अगर तुम यह सुन रहे हो, तो मैं शायद अपनी लड़ाई पूरी नहीं कर पाया।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    },
+    {
+      "scene_id": "E030-S03",
+      "estimated_start_s": 40,
+      "estimated_end_s": 60,
+      "visual_prompt_hi": "अंधेरे में दूसरा आदमी। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "slow_pull_out",
+      "voiceover_text": "उन्होंने शहर के नक्शे, जलाशय के लॉग और आठ बच्चों के बारे में बात की। फिर अचानक आवाज़ रुकी, और किसी दूसरे व्यक्ति ने कहा—इसे अभी बंद करो।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    }
+  ],
+  "audience_engagement": {
+    "question_hi": "अर्जुन की आवाज़ पुरानी रिकॉर्डिंग है या कोई अब भी संदेश भेज रहा है?",
+    "placement": "pinned_comment_and_optional_end_card",
+    "canon_impact": "none"
+  },
+  "continuity": {
+    "arc": "II · छिपे हुए गवाह",
+    "episode_summary_hi": "पहाड़ी रेडियो स्टेशन कई साल पहले बंद हो चुका था। फिर भी उसकी छत पर लाल चेतावनी बत्ती जल रही थी। मीरा और कबीर अंदर पहुँचे तो डेस्क पर पुराना माइक्रोफोन, धूल और हाल में इस्…",
+    "canon_status": "planned",
+    "character_id_refs": []
+  },
+  "production": {
+    "script_status": "draft",
+    "voice_status": "not_generated",
+    "image_status": "not_generated",
+    "render_status": "not_generated",
+    "final_video_path": "outputs/ep-030.mp4"
+  }
+}

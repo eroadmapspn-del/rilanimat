@@ -13,7 +13,7 @@ export type ArtSpec = {
   rain?: boolean;
   dust?: boolean;
   /** "photo": render as an old sepia photograph (flashbacks, Arjun's 2008 pictures) */
-  look?: "normal" | "photo";
+  look?: "normal" | "photo" | "friendly";
   /** "close": punch in on the first character (or the objects) for a closer, more intimate shot */
   view?: "wide" | "close";
 };

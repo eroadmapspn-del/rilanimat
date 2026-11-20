@@ -47,7 +47,7 @@ def cmd_import_episode(a) -> None:
 
     out = import_episode(Path(a.season), a.number, Path(a.out or f"productions/ep-{a.number:03d}"),
                          cta=a.cta, with_cta=not a.no_cta,
-                         shots=not a.no_shots, polls=Path(a.polls) if a.polls else None)
+                         shots=not a.no_shots, polls=Path(a.polls) if a.polls else None, friendly=a.friendly)
     print(f"Imported episode {a.number} into {out}. The season files were not changed. Next: voice, then images.")
 
 
@@ -180,6 +180,7 @@ def main(argv: list[str] | None = None) -> None:
     imp.add_argument("--no-cta", action="store_true")
     imp.add_argument("--no-shots", action="store_true", help="one picture per season scene, not per sentence group")
     imp.add_argument("--polls", help="poll file (default polls/terahvi.json)")
+    imp.add_argument("--friendly", action="store_true", help="lighter, warmer storybook look with softer faces")
     imp.set_defaults(fn=cmd_import_episode)
     for stream in (sys.stdout, sys.stderr):  # Hindi text must not crash a legacy Windows console
         stream.reconfigure(encoding="utf-8", errors="replace")

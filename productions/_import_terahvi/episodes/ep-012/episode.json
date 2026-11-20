@@ -1,0 +1,75 @@
+{
+  "episode_number": 12,
+  "episode_id": "EP-012",
+  "title_hi": "नंदिनी की शर्त",
+  "target_duration_seconds": 60,
+  "narration_hi": "दरवाज़ा खोलने वाली महिला सचमुच नंदिनी थीं। उम्र ने चेहरा बदल दिया था, आवाज़ नहीं। उन्होंने मीरा से अर्जुन की पहचान-पट्टी माँगी और उसकी सिलाई के नीचे छिपा कागज़ निकाल लिया। कागज़ पर चार शब्द लिखे थे—खुली नहर, बंद दरवाज़ा। नंदिनी ने बताया कि आठ बच्चों को बचाया गया था, लेकिन उस रात उन्होंने अपने असली नाम खो दिए। जब मीरा ने पूछा कि किसके आदेश पर, नंदिनी ने कहा—जिसने खतरे की सूचना छिपाई, उसी ने बचाव की कहानी भी दबा दी। उन्होंने एक फोटो दी, जिसमें विक्रम के पीछे जलाशय का नियंत्रण कक्ष दिखाई दे रहा था।",
+  "narration_word_count": 98,
+  "voiceover": {
+    "language": "hi-IN",
+    "voice_id": "CONFIGURE_VOICE_ID",
+    "provider": "CONFIGURE_TTS_PROVIDER",
+    "delivery": "धीमा, सधे हुए रहस्य के साथ",
+    "pace_wpm_target": 100,
+    "pronunciation_notes": [
+      "मीरा: मी-रा",
+      "देवगढ़: देव-गढ़",
+      "कबीर: क-बीर",
+      "अर्जुन: अर्-जुन"
+    ],
+    "pause_before_final_reveal_ms": 600,
+    "audio_path": "assets/audio/ep-012.wav",
+    "word_timestamps_path": "episodes/ep-012/word-timings.json",
+    "status": "not_generated"
+  },
+  "scenes": [
+    {
+      "scene_id": "E012-S01",
+      "estimated_start_s": 0,
+      "estimated_end_s": 20,
+      "visual_prompt_hi": "नंदिनी का शांत चेहरा परछाईं में। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "slow_push_in",
+      "voiceover_text": "दरवाज़ा खोलने वाली महिला सचमुच नंदिनी थीं। उम्र ने चेहरा बदल दिया था, आवाज़ नहीं। उन्होंने मीरा से अर्जुन की पहचान-पट्टी माँगी और उसकी सिलाई के नीचे छिपा कागज़ निकाल लिया।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    },
+    {
+      "scene_id": "E012-S02",
+      "estimated_start_s": 20,
+      "estimated_end_s": 40,
+      "visual_prompt_hi": "आईडी की सिलाई से कागज़। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "parallax_left",
+      "voiceover_text": "कागज़ पर चार शब्द लिखे थे—खुली नहर, बंद दरवाज़ा। नंदिनी ने बताया कि आठ बच्चों को बचाया गया था, लेकिन उस रात उन्होंने अपने असली नाम खो दिए।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    },
+    {
+      "scene_id": "E012-S03",
+      "estimated_start_s": 40,
+      "estimated_end_s": 60,
+      "visual_prompt_hi": "पुराना जलाशय नियंत्रण कक्ष। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "slow_pull_out",
+      "voiceover_text": "जब मीरा ने पूछा कि किसके आदेश पर, नंदिनी ने कहा—जिसने खतरे की सूचना छिपाई, उसी ने बचाव की कहानी भी दबा दी। उन्होंने एक फोटो दी, जिसमें विक्रम के पीछे जलाशय का नियंत्रण कक्ष दिखाई दे रहा था।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    }
+  ],
+  "audience_engagement": {
+    "question_hi": "नंदिनी पर अभी कितना भरोसा करेंगे?",
+    "placement": "pinned_comment_and_optional_end_card",
+    "canon_impact": "none"
+  },
+  "continuity": {
+    "arc": "I · घंटी और बच्चे",
+    "episode_summary_hi": "दरवाज़ा खोलने वाली महिला सचमुच नंदिनी थीं। उम्र ने चेहरा बदल दिया था, आवाज़ नहीं। उन्होंने मीरा से अर्जुन की पहचान-पट्टी माँगी और उसकी सिलाई के नीचे छिपा कागज़ निकाल लिया…",
+    "canon_status": "planned",
+    "character_id_refs": []
+  },
+  "production": {
+    "script_status": "draft",
+    "voice_status": "not_generated",
+    "image_status": "not_generated",
+    "render_status": "not_generated",
+    "final_video_path": "outputs/ep-012.mp4"
+  }
+}

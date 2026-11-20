@@ -65,7 +65,7 @@ def _clean(text: str) -> str:
 
 
 def import_episode(season: Path, number: int, out: Path, cta: str | None = None, with_cta: bool = True,
-                   shots: bool = True, polls: Path | None = None) -> Path:
+                   shots: bool = True, polls: Path | None = None, friendly: bool = False) -> Path:
     season = Path(season)
     src = season / "episodes" / f"ep-{number:03d}" / "episode.json"
     if not src.exists():
@@ -113,6 +113,13 @@ def import_episode(season: Path, number: int, out: Path, cta: str | None = None,
             "season_scene_id": "cta",
         })
         narration = f"{narration} {line}"
+
+    if friendly:  # storybook look: lighter, warmer grade; the art layer softens faces and colours
+        for sc in scenes:
+            v = sc["visual"]
+            if v.get("art"):
+                v["art"] = {**v["art"], "look": "friendly", "fog": min(0.15, v["art"].get("fog", 0.15))}
+            v["atmosphere"] = {"tint": "#6a8a8c", "dim": 0.12}
 
     story = {
         "meta": {

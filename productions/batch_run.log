@@ -1,0 +1,57 @@
+== terahvi ep-014
+Imported episode 14 into productions\terahvi\ep-014. The season files were not changed. Next: voice, then images.
+Voice-over: 48.3s, 114 words, timing=pause-aligned
+  note: Gemini TTS returns no word timings: clauses are placed from the audio's pauses, words inside by length.
+Rendered productions\terahvi\ep-014\out\reel.mp4
+[h264 @ 
+[WARN ] audio: Loudness is 10.0 LUFS. Aim for about -14 (acceptable -19 to -13).
+[WARN ] audio: True peak 99.4 dBFS can clip after platform re-encoding (keep below -1).
+[INFO ] video: 1080x1920, 30 fps, h264, 49.3s.
+
+1 error(s), 7 warning(s).
+== terahvi ep-015
+Imported episode 15 into productions\terahvi\ep-015. The season files were not changed. Next: voice, then images.
+Voice-over: 55.5s, 116 words, timing=pause-aligned
+  note: Gemini TTS returns no word timings: clauses are placed from the audio's pauses, words inside by length.
+error: Rendering took longer than 30 minutes and was stopped.
+[WARN ] pacing: Scene 5 lasts 14.0s. Split it or add motion.
+[WARN ] pacing: Scene 7 lasts 13.2s. Split it or add motion.
+[INFO ] layout: Captions sit 420px above the bottom edge and 90px from the sides (mobile-safe).
+[ERROR] video: productions\terahvi\ep-015\out\reel.mp4 does not exist. Render first.
+
+1 error(s), 6 warning(s).
+== terahvi ep-016
+Imported episode 16 into productions\terahvi\ep-016. The season files were not changed. Next: voice, then images.
+Voice-over: 57.8s, 116 words, timing=pause-aligned
+  note: Gemini TTS returns no word timings: clauses are placed from the audio's pauses, words inside by length.
+tions sit 420px above the bottom edge and 90px from the sides (mobile-safe).
+[ERROR] video: productions\terahvi\ep-013\out\reel.mp4 does not exist. Render first.
+
+1 error(s), 4 warning(s).
+== terahvi ep-014
+Imported episode 14 into productions\terahvi\ep-014. The season files were not changed. Next: voice, then images.
+Voice-over: 54.4s, 114 words, timing=pause-aligned
+  note: Gemini TTS returns no word timings: clauses are placed from the audio's pauses, words inside by length.
+Rendered productions\terahvi\ep-014\out\reel.mp4
+[h264 @ 
+[WARN ] audio: Loudness is 10.0 LUFS. Aim for about -14 (acceptable -19 to -13).
+[WARN ] audio: True peak 99.4 dBFS can clip after platform re-encoding (keep below -1).
+[INFO ] video: 1080x1920, 30 fps, h264, 49.3s.
+
+1 error(s), 7 warning(s).
+== terahvi ep-015
+Imported episode 15 into productions\terahvi\ep-015. The season files were not changed. Next: voice, then images.
+Voice-over: 61.0s, 116 words, timing=pause-aligned
+  note: Gemini TTS returns no word timings: clauses are placed from the audio's pauses, words inside by length.
+error: Rendering took longer than 30 minutes and was stopped.
+[WARN ] pacing: Scene 5 lasts 14.0s. Split it or add motion.
+[WARN ] pacing: Scene 7 lasts 13.2s. Split it or add motion.
+[INFO ] layout: Captions sit 420px above the bottom edge and 90px from the sides (mobile-safe).
+[ERROR] video: productions\terahvi\ep-015\out\reel.mp4 does not exist. Render first.
+
+1 error(s), 6 warning(s).
+== terahvi ep-016
+Imported episode 16 into productions\terahvi\ep-016. The season files were not changed. Next: voice, then images.
+Voice-over: 55.9s, 116 words, timing=pause-aligned
+  note: Gemini TTS returns no word timings: clauses are placed from the audio's pauses, words inside by length.
+  rendering   0%

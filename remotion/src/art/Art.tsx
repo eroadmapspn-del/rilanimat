@@ -43,6 +43,7 @@ export const Art: React.FC<{ spec: ArtSpec }> = ({ spec }) => {
   const layout = close ? [{ x: 540, scale: 2.5 }] : CHAR_LAYOUT[Math.max(1, chars.length)];
   const props = (spec.props ?? []).filter((p) => PROPS[p.id]);
   const photo = spec.look === "photo";
+  const friendly = spec.look === "friendly";
   const wall = props.filter((p) => WALL.has(p.id));
   const desk = props.filter((p) => !WALL.has(p.id));
   const useTable = desk.length > 0 && chars.length === 0;
@@ -58,7 +59,7 @@ export const Art: React.FC<{ spec: ArtSpec }> = ({ spec }) => {
 
   return (
     <AbsoluteFill style={{ background: C.ink }}>
-      <svg viewBox="0 0 1080 1920" width="100%" height="100%" style={{ filter: photo ? "sepia(0.9) contrast(1.1) brightness(0.9)" : undefined }}>
+      <svg viewBox="0 0 1080 1920" width="100%" height="100%" style={{ filter: photo ? "sepia(0.9) contrast(1.1) brightness(0.9)" : friendly ? "brightness(1.45) saturate(1.2) contrast(0.92)" : undefined }}>
         <Defs />
         <g transform={close && chars.length === 0 ? "translate(540 960) scale(1.3) translate(-540 -960)" : undefined}>
         <Location />
@@ -97,14 +98,14 @@ export const Art: React.FC<{ spec: ArtSpec }> = ({ spec }) => {
             const a = Math.round((c.delay ?? 0) * fps);
             x = interpolate(frame, [a, Math.max(a + 1, durationInFrames - 1)], [c.fromX ?? baseX, c.toX ?? baseX], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.inOut(Easing.sin) });
           }
-          return <Character key={c.id + i} id={c.id} mood={c.mood} action={c.action} x={x} y={c.y ?? (close ? 2330 : 1880)} scale={c.scale ?? layout[i].scale} flip={c.flip ?? i === 1} shadow={c.shadow} face={c.face} />;
+          return <Character key={c.id + i} id={c.id} mood={c.mood} action={c.action} x={x} y={c.y ?? (close ? 2330 : 1880)} scale={c.scale ?? layout[i].scale} flip={c.flip ?? i === 1} shadow={friendly ? 0 : c.shadow} face={friendly ? true : c.face} friendly={friendly} />;
         })}
 
         </g>
         {useTable && <Glow x={540} y={420} r={600} flicker={false} />}
-        <Fog opacity={spec.fog ?? 0.35} />
+        <Fog opacity={friendly ? Math.min(0.15, spec.fog ?? 0.15) : spec.fog ?? 0.35} />
         {spec.rain && <Rain />}
-        {(spec.dust ?? true) && <Dust />}
+        {(spec.dust ?? true) && <Dust color={friendly ? "#fff2cc" : undefined} count={friendly ? 28 : undefined} />}
       </svg>
     </AbsoluteFill>
   );

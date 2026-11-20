@@ -1,0 +1,75 @@
+{
+  "episode_number": 45,
+  "episode_id": "EP-045",
+  "title_hi": "समारोह की तस्वीर",
+  "target_duration_seconds": 60,
+  "narration_hi": "रिसॉर्ट के उद्घाटन समारोह की तस्वीरें सार्वजनिक प्रचार पुस्तिका में मिल गईं। विक्रम ने दावा किया था कि बाढ़ की रात वह पूरे समय मेहमानों के बीच था। लेकिन एक फोटो में वह नहीं दिखा, जबकि महेश मंच पर भाषण दे रहा था। उसी समय की दूसरी तस्वीर में विक्रम जलाशय की दिशा से आते नजर आया। मीरा को लगा पहेली सुलझ गई। फिर कबीर ने याद दिलाया कि तस्वीर समय का संकेत देती है, पूर्ण सबूत नहीं। उन्हें अतिथि रजिस्टर के साथ नियंत्रण कक्ष का प्रवेश रिकॉर्ड भी चाहिए। तभी तारा का संदेश आया—मुझे बच्चों में से एक और मिल गया है। वह बोलने को तैयार है।",
+  "narration_word_count": 108,
+  "voiceover": {
+    "language": "hi-IN",
+    "voice_id": "CONFIGURE_VOICE_ID",
+    "provider": "CONFIGURE_TTS_PROVIDER",
+    "delivery": "जांचपूर्ण, नियंत्रित तनाव",
+    "pace_wpm_target": 100,
+    "pronunciation_notes": [
+      "मीरा: मी-रा",
+      "देवगढ़: देव-गढ़",
+      "कबीर: क-बीर",
+      "अर्जुन: अर्-जुन"
+    ],
+    "pause_before_final_reveal_ms": 600,
+    "audio_path": "assets/audio/ep-045.wav",
+    "word_timestamps_path": "episodes/ep-045/word-timings.json",
+    "status": "not_generated"
+  },
+  "scenes": [
+    {
+      "scene_id": "E045-S01",
+      "estimated_start_s": 0,
+      "estimated_end_s": 20,
+      "visual_prompt_hi": "उद्घाटन समारोह की पुरानी तस्वीर। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "slow_push_in",
+      "voiceover_text": "रिसॉर्ट के उद्घाटन समारोह की तस्वीरें सार्वजनिक प्रचार पुस्तिका में मिल गईं। विक्रम ने दावा किया था कि बाढ़ की रात वह पूरे समय मेहमानों के बीच था। लेकिन एक फोटो में वह नहीं दिखा, जबकि महेश मंच पर भाषण दे रहा था।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    },
+    {
+      "scene_id": "E045-S02",
+      "estimated_start_s": 20,
+      "estimated_end_s": 40,
+      "visual_prompt_hi": "खाली कुर्सी। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "parallax_left",
+      "voiceover_text": "उसी समय की दूसरी तस्वीर में विक्रम जलाशय की दिशा से आते नजर आया। मीरा को लगा पहेली सुलझ गई। फिर कबीर ने याद दिलाया कि तस्वीर समय का संकेत देती है, पूर्ण सबूत नहीं।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    },
+    {
+      "scene_id": "E045-S03",
+      "estimated_start_s": 40,
+      "estimated_end_s": 60,
+      "visual_prompt_hi": "तारा का संदेश। देवगढ़, उत्तर भारत, फिल्मी रहस्य दृश्य, 9:16 वर्टिकल, सुसंगत पात्र-शैली, डार्क टील और एंबर प्रकाश, कोई वॉटरमार्क, बिना गलत लिखावट के।",
+      "animation": "slow_pull_out",
+      "voiceover_text": "उन्हें अतिथि रजिस्टर के साथ नियंत्रण कक्ष का प्रवेश रिकॉर्ड भी चाहिए। तभी तारा का संदेश आया—मुझे बच्चों में से एक और मिल गया है। वह बोलने को तैयार है।",
+      "caption_policy": "Hindi word-timed captions; on screen 2–5 शब्द प्रति समूह; bottom safe area से ऊपर",
+      "asset_status": "not_generated"
+    }
+  ],
+  "audience_engagement": {
+    "question_hi": "आज के एपिसोड “समारोह की तस्वीर” में आपके हिसाब से सबसे अहम सुराग कौन-सा था?",
+    "placement": "pinned_comment_and_optional_end_card",
+    "canon_impact": "none"
+  },
+  "continuity": {
+    "arc": "III · मूल रिकॉर्ड की तलाश",
+    "episode_summary_hi": "रिसॉर्ट के उद्घाटन समारोह की तस्वीरें सार्वजनिक प्रचार पुस्तिका में मिल गईं। विक्रम ने दावा किया था कि बाढ़ की रात वह पूरे समय मेहमानों के बीच था। लेकिन एक फोटो में वह नह…",
+    "canon_status": "planned",
+    "character_id_refs": []
+  },
+  "production": {
+    "script_status": "draft",
+    "voice_status": "not_generated",
+    "image_status": "not_generated",
+    "render_status": "not_generated",
+    "final_video_path": "outputs/ep-045.mp4"
+  }
+}
