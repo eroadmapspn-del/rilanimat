@@ -1,0 +1,264 @@
+// Reel Studio SaaS data model.
+// Files live in private object storage; Postgres holds only metadata and the story JSON.
+// Every user-owned table carries userId so each query can be scoped to the signed-in user.
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+// FREE: 3 videos of up to 30 s. PRO (Rs 499/month): 180 videos of up to 60 s. STUDIO (Rs 999/month): 600 videos, 3D. ADMIN: manages users.
+// Limits live in src/lib/plans.ts. A PRO/STUDIO role whose planExpiresAt has passed behaves as FREE.
+enum Role {
+  FREE
+  PRO
+  STUDIO
+  ADMIN
+}
+
+enum PaidPlan {
+  PRO
+  STUDIO
+}
+
+enum OrderStatus {
+  CREATED
+  PAID
+  FAILED
+  REFUNDED
+}
+
+enum LedgerReason {
+  PURCHASE // +N credits after a verified Razorpay payment
+  RENDER // -1 when a final render starts
+  REFUND // +1 when that render fails
+  ADMIN // manual adjustment (audit-logged)
+}
+
+enum RenderStatus {
+  QUEUED
+  RUNNING
+  DONE
+  FAILED
+  CANCELED
+}
+
+enum AssetKind {
+  IMAGE
+  AUDIO
+  VIDEO
+  OTHER
+}
+
+// ---------- Users (identity is handled by Auth.js with JWT sessions; users are matched by email) ----------
+
+model User {
+  id            String         @id @default(cuid())
+  name          String?
+  email         String?        @unique
+  image         String?
+  passwordHash  String?
+  role          Role           @default(FREE)
+  planStartedAt DateTime?
+  planExpiresAt DateTime?
+  createdAt     DateTime       @default(now())
+  orders        Order[]
+  ledger        CreditLedger[]
+  characters    Character[]
+  projects      Project[]
+  assets        Asset[]
+  renders       RenderJob[]
+}
+
+// ---------- Payments and the "3 videos" entitlement ----------
+
+model Order {
+  id                String      @id @default(cuid())
+  userId            String
+  razorpayOrderId   String      @unique
+  razorpayPaymentId String?     @unique
+  amountPaise       Int
+  currency          String      @default("INR")
+  credits           Int         @default(3)
+  plan              PaidPlan    @default(PRO)
+  status            OrderStatus @default(CREATED)
+  createdAt         DateTime    @default(now())
+  paidAt            DateTime?
+
+  user User @relation(fields: [userId], references: [id])
+
+  @@index([userId])
+}
+
+/// Append-only. A user's balance is SUM(delta). `refKey` is unique, so a retried webhook or a double click
+/// cannot grant or spend the same credit twice (e.g. "order:<id>", "render:<jobId>", "refund:<jobId>").
+model CreditLedger {
+  id        String       @id @default(cuid())
+  userId    String
+  delta     Int
+  reason    LedgerReason
+  refKey    String       @unique
+  createdAt DateTime     @default(now())
+
+  user User @relation(fields: [userId], references: [id])
+
+  @@index([userId])
+}
+
+// ---------- Characters owned by the buyer, reused in every project ----------
+
+model Character {
+  id          String   @id @default(cuid())
+  userId      String
+  name        String
+  /// What the user typed ("a 45 year old teacher with grey hair and glasses...")
+  description String   @db.Text
+  /// Structured Look consumed by the Remotion art library: skin, hair, outfit, trim, hairStyle, extras[], age, size
+  look        Json
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, name])
+}
+
+// ---------- Project file system ----------
+
+/// A series: one idea split into episodes. Characters come from the owner's saved cast.
+model Project {
+  id           String    @id @default(cuid())
+  userId       String
+  title        String
+  /// What the user typed: a topic or a full prompt
+  prompt       String    @db.Text
+  language     String    @default("Hindi")
+  episodeCount Int       @default(1)
+  /// Series bible written by the planner: premise, tone, arc, cast roles, visual style, recurring clues
+  bible        Json?
+  archivedAt   DateTime?
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+
+  user     User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  episodes Episode[]
+  assets   Asset[]
+  renders  RenderJob[]
+
+  @@index([userId, updatedAt])
+}
+
+enum EpisodeStage {
+  PLANNED // outline exists, no script yet
+  SCRIPTING // Gemini is writing
+  SCRIPT_READY // waiting for the user to read and approve
+  SCRIPT_APPROVED
+  VOICING
+  VOICE_READY
+  VOICE_APPROVED
+  RENDERING
+  DONE
+  FAILED
+}
+
+/// One episode moves through the pipeline: script -> approve -> voice -> approve -> render.
+/// Editing the spoken words resets everything after the script (see domain rules in lib/pipeline/workflow.ts).
+model Episode {
+  id             String       @id @default(cuid())
+  projectId      String
+  userId         String
+  number         Int
+  title          String
+  /// Outline from the planner: what happens, the cliffhanger, the audience question
+  outline        Json
+  stage          EpisodeStage @default(PLANNED)
+  /// Current story.json (scenes with narration + art specs); same shape the Remotion Story composition reads
+  story          Json?
+  /// Voice-over result: file key, duration, word timings, timing = measured | estimated
+  voice          Json?
+  currentVersion Int          @default(0)
+  error          String?
+  createdAt      DateTime     @default(now())
+  updatedAt      DateTime     @updatedAt
+
+  project  Project          @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  versions EpisodeVersion[]
+  renders  RenderJob[]
+
+  @@unique([projectId, number])
+  @@index([userId])
+}
+
+/// Immutable snapshot of an episode's story. Every edit or regeneration adds a row: undo, history, re-render.
+model EpisodeVersion {
+  id        String   @id @default(cuid())
+  episodeId String
+  number    Int
+  story     Json
+  note      String?
+  createdAt DateTime @default(now())
+
+  episode Episode     @relation(fields: [episodeId], references: [id], onDelete: Cascade)
+  renders RenderJob[]
+
+  @@unique([episodeId, number])
+}
+
+/// Metadata for a file in private object storage. key = users/<userId>/projects/<projectId>/<kind>/<id>.<ext>
+model Asset {
+  id        String    @id @default(cuid())
+  userId    String
+  projectId String
+  kind      AssetKind
+  key       String    @unique
+  mime      String
+  bytes     Int
+  sha256    String
+  createdAt DateTime  @default(now())
+
+  user     User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  project  Project    @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  outputOf RenderJob?
+
+  @@index([userId])
+  @@index([projectId])
+}
+
+model RenderJob {
+  id            String       @id @default(cuid())
+  userId        String
+  projectId     String
+  episodeId     String
+  versionId     String
+  status        RenderStatus @default(QUEUED)
+  progress      Int          @default(0)
+  error         String?
+  outputAssetId String?      @unique
+  createdAt     DateTime     @default(now())
+  startedAt     DateTime?
+  finishedAt    DateTime?
+
+  user        User           @relation(fields: [userId], references: [id])
+  project     Project        @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  episode     Episode        @relation(fields: [episodeId], references: [id], onDelete: Cascade)
+  version     EpisodeVersion @relation(fields: [versionId], references: [id])
+  outputAsset Asset?         @relation(fields: [outputAssetId], references: [id])
+
+  @@index([userId])
+  @@index([status, createdAt])
+}
+
+model AuditLog {
+  id        String   @id @default(cuid())
+  userId    String?
+  action    String
+  detail    Json?
+  ip        String?
+  createdAt DateTime @default(now())
+
+  @@index([userId, createdAt])
+}
